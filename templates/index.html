@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO -->
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %} 
+    <meta name="title" content="Armadio Gallery">
+    <meta name="url" content="www.armadiogallery.com">
+    <meta name="keywords" content="Kitchen Cabinet,Wardrobe, Bathroom Vanities, Wooden cladding">
+    <meta name="image" content="Armadio Gallery - Service Armadio Gallery- Kitchen Armadio Gallery- Wordrop Armadio Gallery - Bathroom Armadio Gallery - Wooden cladding Armadio Gallery">
+    <meta name="description" content="">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="canonical" href="https://demo1marketia.pythonanywhere.com/">
+    <link rel="canonical" href="https://demo1marketia.pythonanywhere.com/#about"> -->
+    {% else %}
+    <meta name="title" content="أرماديو جاليري">
+    <meta name="url" content="www.armadiogallery.com">
+    <meta name="keywords" content="أرماديو جاليري - خدمات - مطابخ- خزائن دريسينج روم - المغاسل - الحائط الخشبي">
+    <meta name="image" content="Armadio Gallery - Service Armadio Gallery- Kitchen Armadio Gallery- Wordrop Armadio Gallery - Bathroom Armadio Gallery - Wooden cladding Armadio Gallery">
+    <meta name="description" content="شركة سعودية متخصصة في صناعة المطابخ، خزائن دريسينغ روم وكسوة الحائط بالخشب لإضافة لمسات عصرية وأنيقة لمنزلك">
+    <!-- <link rel="canonical" href="#">
+    <link rel="canonical" href="#"> -->
+    {% endif %}
+
+    <title>{% trans "Armadio Gallery" %}</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %} 
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    {% else %}
+    <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet">
+    {% endif %}
+
+    <!--Color Themes-->
+    <link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{% static 'images/logo-icon.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/logo-icon.png' %}" type="image/x-icon">
+
+    <!-- Font Icon -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
+
+    <!-- Font Google -->
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %} 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
+    {% else %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
+    
+    {% endif %}
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="title" content="Armadio Gallery">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="{% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'en' %} 
+            page-wrapper 
+            {% else %} 
+            rtl 
+            {% endif %} ">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Social Media -->
+    <!-- Social Slider -->
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %} 
+        <div class="social-slider social-slider--left">
+            <div class="social-slider__container">
+                <!-- One Icon -->
+                <div class="social-slider__button-container">
+                    <a class="social-slider__button" href="https://instagram.com/armadio_arte?utm_medium=copy_link" target="_blank" rel="me">
+                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
+                        <span class="social-slider__circle">
+                            <i class="fa fa-instagram"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Two Icon -->
+                <div class="social-slider__button-container">
+                    <a class="social-slider__button" href="https://story.snapchat.com/u/armadio_elite?share_id=MDRCRTFE&locale=en_EG" target="_blank" rel="me">
+                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
+                        <span class="social-slider__circle">
+                            <i class="fa fa-snapchat-ghost"></i>
+                        </span>
+                    </a>
+                </div>
+                
+
+                <!-- Three Icon -->
+                <div class="social-slider__button-container">
+                    <a class="social-slider__button" href="https://twitter.com/armadillogalle1/status/1499326460959547393?s=21" target="_blank" rel="me">
+                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
+                        <span class="social-slider__circle">
+                            <i class="fa fa-twitter"></i>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    {% else %} 
+        <div class="social-slider social-slider--right">
+            <div class="social-slider__container">
+                <!-- One Icon -->
+                <div class="social-slider__button-container">
+                    <a class="social-slider__button" href="https://instagram.com/armadio_arte?utm_medium=copy_link" target="_blank" rel="me">
+                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
+                        <span class="social-slider__circle">
+                            <i class="fa fa-instagram"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Two Icon -->
+                <div class="social-slider__button-container">
+                    <a class="social-slider__button" href="https://story.snapchat.com/u/armadio_elite?share_id=MDRCRTFE&locale=en_EG" target="_blank" rel="me">
+                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
+                        <span class="social-slider__circle">
+                            <i class="fa fa-snapchat-ghost"></i>
+                        </span>
+                    </a>
+                </div>
+                
+
+                <!-- Three Icon -->
+                <div class="social-slider__button-container">
+                    <a class="social-slider__button" href="https://twitter.com/armadillogalle1/status/1499326460959547393?s=21" target="_blank" rel="me">
+                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
+                        <span class="social-slider__circle">
+                            <i class="fa fa-twitter"></i>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    {% endif %}    
+    <!-- Main Header-->
+    <header class="main-header header-style-one">
+        <div class="auto-container">
+            <div class="header-lower">
+                <div class="main-box clearfix">
+                    <div class="logo-box">
+                        <div class="logo"><a href="/"> 
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% if LANGUAGE_CODE == 'en' %}     
+                            <img src="{% static 'images/logo-style.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
+                        {% else %} 
+                            <img src="{% static 'images/logo-style-rtl.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
+                        {% endif %}   
+                        </div>    
+                    </div>
+
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md ">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon flaticon-menu-button"></span>
+                                </button>
+                            </div>
+
+                            <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="#">{% trans "Home" %}</a></li>
+                                    <li class="dropdown"><a href="#about">{% trans "About Us" %}</a></li>
+                                    <li class="dropdown"><a href="#kitchen">{% trans "Kitchen Cabinet" %}</a></li>
+                                    <li class="dropdown"><a href="#Wardrobe">{% trans "Wardrobe" %}</a></li>
+                                    <li class="dropdown"><a href="#bathroom">{% trans "Bathroom Vanities" %}</a></li>
+                                    <li class="dropdown"><a href="#cladding">{% trans "Wooden cladding" %}</a></li>
+                                    <li class="dropdown"><a href="#project">{% trans "Our Projects" %}</a></li>                                   
+                                </ul>
+                                <!-- Outer Box-->
+                                <div class="outer-box-nav">
+                                    <!--Language Box-->
+                                    {% get_current_language as LANGUAGE_CODE %}
+                                    {% get_available_languages as LANGUAGES %}
+                                    {% get_language_info_list for LANGUAGES as languages %}
+                                    <form action="{% url 'set_language' %}" method="post" class="language-box-outer">
+                                        {% csrf_token %}
+                                        <input name="next" type="hidden" value="{{ redirect_to }}" />
+                                          {% for language in languages %}
+                                              {% if language.code != LANGUAGE_CODE %}
+                                                  <button type="submit" name="language" value="{{ language.code }}" class="btn-lang">
+                                                    <p class="language-box-btn">{{ language.code }}</p>
+                                                  </button>
+                                              {% endif %}
+                                          {% endfor %}
+                                      </form>
+                                </div>
+
+                            </div>
+                              
+                            
+                        </nav><!-- Main Menu End-->
+                        
+                        
+                        <!-- Outer Box-->
+                        <div class="outer-box">
+                            <!--Language Box-->
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            <form action="{% url 'set_language' %}" method="post" class="language-box-outer">
+                                {% csrf_token %}
+                                <input name="next" type="hidden" value="{{ redirect_to }}" />
+                                  {% for language in languages %}
+                                      {% if language.code != LANGUAGE_CODE %}
+                                          <button type="submit" name="language" value="{{ language.code }}" class="btn-lang">
+                                            <p class="language-box-btn">{{ language.code }}</p>
+                                          </button>
+                                      {% endif %}
+                                  {% endfor %}
+                              </form>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Main Header -->
+
+    <!-- Bnner Section -->
+    <section class="banner-section">
+        <div class="banner-carousel owl-carousel owl-theme">
+            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-1.webp' %});">
+                <div class="auto-container">
+                    <div class="content-box">
+                        <h2>{% trans "The kitchen is the living" %} <br> {% trans "space by excellence" %}</h2>
+                        <div class="text">{% trans "We made a kitchen for you, with your taste in mind" %}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-2.webp' %});">
+                <div class="auto-container">
+                    <div class="content-box">
+                        <h2>{% trans "The luxury bathrooms" %}</h2>
+                        <div class="text">{% trans "We transform your space into a relaxing and stylish sanctuary" %}</div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-3.webp' %});">
+                <div class="auto-container">
+                    <div class="content-box">
+                        <h2>{% trans "Organize your life" %}</h2>
+                        <div class="text">{% trans "Your storage areas help you to enhance your living" %}</div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-4.webp' %});">
+                <div class="auto-container">
+                    <div class="content-box">
+                        <h2>{% trans "Let’s build something unique" %}</h2>
+                        <div class="text">{% trans "Wall panels create a space that is both stylish and authentic" %}</div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="bottom-box">
+            <div class="auto-container clearfix">
+                <ul class="contact-info">
+                    <li><span>{% trans "Phone" %} :</span><a href="https://bit.ly/3irVGbB" target="_blank"> {% trans "00966 59 542 4919" %}</a></li>
+                    <li><span>{% trans "EMAIL" %} :</span> <a href="#" target="_blank">Sales@armadiogallery.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Bnner Section -->
+
+    <!-- About Section -->
+    <section class="about-section" style="background-image: url({% static 'images/background/1.webp' %});" id="about">
+        <div class="auto-container">
+            <div class="row no-gutters">
+                <!-- Image Column -->
+                <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <div class="title-box wow fadeInLeft" data-wow-delay='1200ms'>
+                            <h2>{% trans "ABOUT" %} <br> {% trans "US" %}</h2>
+                        </div>
+                        <div class="image-box">
+                            <figure class="alphabet-img wow fadeInRight">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% if LANGUAGE_CODE == 'en' %}     
+                                <img src="{% static 'images/resource/A-letter-cut.webp' %}" width="450" height="420" alt="Armadio Gallery">
+                            {% else %}    
+                                <img src="{% static 'images/resource/A-letter-cut.webp' %}" width="450" height="420" alt="Armadio Gallery">
+                            {% endif %}    
+                            </figure>
+                            <figure class="alphabet-img-responsive wow fadeInRight"><img src="{% static 'images/resource/Aletter-3.webp' %}" width="450" height="420" alt="Armadio Gallery"></figure>
+                            <figure class="image wow fadeInRight" data-wow-delay='600ms'><img src="{% static 'images/resource/G-letter.webp' %}" width="355" height="635" alt="Armadio Gallery"></figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInLeft">
+                        <div class="content-box">
+                            <div class="title">
+                                <h2>{% trans "Armadio Gallery" %} <br> <span> {% trans "With you from start to finish" %}</span></h2>
+                            </div>
+                            <div class="text">
+                                {% trans "Our designs speak for themselves because we take pride in what we do. We work with high-quality finishes and reliable materials." %}
+                                {% trans "We look for the latest techniques and styles from around the world because we research our field constantly." %} 
+                                {% trans "At Armadio gallery, we understand the importance of customer service and guarantee satisfaction on all products sold." %}</div>
+                            <div class="link-box"><a href="https://bit.ly/3irVGbB" target="_blank" class="theme-btn btn-style-one">{% trans "Call Us" %}</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End About Section -->
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="upper-box" style="background-image: url({% static 'images/background/2.webp' %});">
+            <div class="auto-container">
+                <div class="sec-title text-center light">
+                    <span class="float-text">{% trans "Services" %}</span>
+                    <h2>{% trans "Our Services" %}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-box">
+            <div class="auto-container">
+                <div class="services-carousel owl-carousel owl-theme">
+                    <!-- Service Block -->
+                    <div class="service-block">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="#"><img src="{% static 'images/resource/service/our-specialization-1.webp' %}" width="370" height="270" alt="Service Armadio Gallery"></a></figure>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">{% trans "Kitchen Cabinet" %}</a></h3>
+                                <div class="text">{% trans "Kitchens are the most important space within a home." %}
+                                    {% trans "Therefore, whether its rebuilding or" %} 
+                                    {% trans "refurbishing our aim is to work with our clients to ensure their vision becomes a reality." %}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Block -->
+                    <div class="service-block">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="#"><img src="{% static 'images/resource/service/our-specialization-2.webp' %}" width="370" height="270" alt="Service Armadio Gallery"></a></figure>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">{% trans "Wardrobe" %}</a></h3>
+                                <div class="text">{% trans "Wardrobes are essential for keeping your bedroom tidy and organised." %}
+                                    {% trans "They provide valuable storage complete your master bedroom and satisfy all of your needs." %}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Block -->
+                    <div class="service-block">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="#"><img src="{% static 'images/resource/service/our-specialization-3.webp' %}" width="370" height="270" alt="Service Armadio Gallery"></a></figure>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">{% trans "Bathroom Vanities" %}</a></h3>
+                                <div class="text">{% trans "A bathroom should not only be a functional room in your home, where you can rest and relax." %} 
+                                    {% trans "But in many homes, a dated or poorly planned bathroom can make that impossible." %} </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Block -->
+                    <div class="service-block">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="#"><img src="{% static 'images/resource/service/our-specialization-4.webp' %}" width="370" height="270" alt="Service Armadio Gallery"></a></figure>
+                            </div>
+                            <div class="lower-content">
+                                <h3><a href="#">{% trans "Wooden cladding" %}</a></h3>
+                                <div class="text">{% trans "Interior wood wall panelling from Armadio gallery is authentic,made from responsibly sourced materials," %} 
+                                    {% trans "all of our wood panels are carefully crafted by experts. We’re passionate about wood, art, and nature." %} </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Services Section -->
+
+    <!-- Kitchen Service  -->
+    <section class="projects-section-two" id="kitchen">
+        <div class="auto-container">
+            <div class="upper-box clearfix">
+                <div class="sec-title">
+                    <span class="float-text">{% trans "Services" %}</span>
+                    <h2>{% trans "Kitchen Cabinet" %}</h2>
+                </div>
+
+            </div>
+            <div class="projects-carousel-two owl-carousel owl-theme">
+                <!-- Project Block -->
+                <div class="project-block-two">
+                    <div class="image-box">
+                        <figure class="image"><img src="{% static 'images/resource/kitchens/kitchen-1.webp' %}" width="970" height="520" alt="Kitchen Armadio Gallery"></figure>
+                    </div>
+                    <div class="info-box">
+                        <div class="inner-box">
+                            <span class="title">{% trans "Kitchen Cabinet" %}</span>
+                            <h3>{% trans "Elegant touch" %}</h3>
+                            <div class="text">{% trans "A kitchen is more than just a place to prepare and cook food, It is the heart of the home." %}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Block -->
+                <div class="project-block-two">
+                    <div class="image-box">
+                        <figure class="image"><img src="{% static 'images/resource/kitchens/kitchen-2.webp' %}" width="970" height="520" alt="Kitchen Armadio Gallery"></figure>
+                    </div>
+                    <div class="info-box">
+                        <div class="inner-box">
+                            <span class="title">{% trans "Kitchen Cabinet" %}</span>
+                            <h3>{% trans "Modern feel" %}</h3>
+                            <div class="text">{% trans "Smart finishing touches especially for those looking to turn their dreams into reality." %}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Block -->
+                <div class="project-block-two">
+                    <div class="image-box">
+                        <figure class="image"><img src="{% static 'images/resource/kitchens/kitchen-3.webp' %}" width="970" height="520" alt="Kitchen Armadio Gallery"></figure>
+                    </div>
+                    <div class="info-box">
+                        <div class="inner-box">
+                            <span class="title">{% trans "Kitchen Cabinet" %}</span>
+                            <h3>{% trans "Customizable Cabinets" %}</h3>
+                            <div class="text">{% trans "Storage maximise space without negatively impacting the look and style of your kitchen." %}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Kitchen Service -->
+
+    <!-- Wardrobe Service  -->
+    <section class="specialize-section-two" id="Wardrobe">
+        <div class="auto-container">
+            <div class="row">
+                <!-- Title Column -->
+                <div class="title-column col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <div class="sec-title">
+                            <span class="float-text">{% trans "Services" %}</span>
+                            <h2>{% trans "Wardrobe" %}</h2>
+                        </div>
+
+                        <div class="text-box">
+                            <h4>{% trans "Amazing Wardrobe" %}</h4>
+                            <p>{% trans "Perhaps you want to transform the look and feel of your Wardrobe but don’t want to waste your money and time." %}
+                                {% trans "That’s where refurbishment can be the ideal solution. It’s a quick way to add style and a more personal feel to your Bedroom." %}</p>
+                            <p>{% trans "With careful planning and design, your wardrobe will enhance the value of your home, reflecting the style and personality." %}
+                                {% trans "We guarantee a simple yet practical solution to your personal wardrobe and storage problem with the best quality at an affordable price." %}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Carousel Column -->
+                <div class="carousel-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <div class="carousel-outer">
+                            <ul class="image-carousel owl-carousel owl-theme">
+
+                                <li><a href="{% static 'images/resource/wordrop/Wardrobe 1-l.webp' %}" class="lightbox-image" title="Wordrop Armadio Gallery"><img src="{% static 'images/resource/wordrop/Wardrobe 1-l.webp' %}" width="470" height="590" alt="Wordrop Armadio Gallery"></a></li>
+
+                                <li><a href="{% static 'images/resource/wordrop/Wardrobe 2-l.webp' %}" class="lightbox-image" title="Wordrop Armadio Gallery"><img src="{% static 'images/resource/wordrop/Wardrobe 2-l.webp' %}" width="470" height="590" alt="Wordrop Armadio Gallery"></a></li>
+
+                                <li><a href="{% static 'images/resource/wordrop/Wardrobe 3-l.webp' %}" class="lightbox-image" title="Wordrop Armadio Gallery"><img src="{% static 'images/resource/wordrop/Wardrobe 3-l.webp' %}" width="470" height="590" alt="Wordrop Armadio Gallery"></a></li>
+
+                                <li><a href="{% static 'images/resource/wordrop/Wardrobe 4-l.webp' %}" class="lightbox-image" title="Wordrop Armadio Gallery"><img src="{% static 'images/resource/wordrop/Wardrobe 4-l.webp' %}" width="470" height="590" alt="Wordrop Armadio Gallery"></a></li>
+
+                                <li><a href="{% static 'images/resource/wordrop/Wardrobe 1-l.webp' %}" class="lightbox-image" title="Wordrop Armadio Gallery"><img src="{% static 'images/resource/wordrop/Wardrobe 1-l.webp' %}" width="470" height="590" alt="Wordrop Armadio Gallery"></a></li>
+
+                                <li><a href="{% static 'images/resource/wordrop/Wardrobe 2-l.webp' %}" class="lightbox-image" title="Wordrop Armadio Gallery"><img src="{% static 'images/resource/wordrop/Wardrobe 2-l.webp' %}" width="470" height="590" alt="Wordrop Armadio Gallery"></a></li>
+
+                                <li><a href="{% static 'images/resource/wordrop/Wardrobe 3-l.webp' %}" class="lightbox-image" title="Wordrop Armadio Gallery"><img src="{% static 'images/resource/wordrop/Wardrobe 3-l.webp' %}" width="470" height="590" alt="Wordrop Armadio Gallery"></a></li>
+
+                                <li><a href="{% static 'images/resource/wordrop/Wardrobe 4-l.webp' %}" class="lightbox-image" title="Wordrop Armadio Gallery"><img src="{% static 'images/resource/wordrop/Wardrobe 4-l.webp' %}" width="470" height="590" alt="Wordrop Armadio Gallery"></a></li>
+
+                            </ul>
+
+                            <ul class="thumbs-carousel owl-carousel owl-theme">
+                                <li class="thumb-box">
+                                    <figure><img src="{% static 'images/resource/wordrop/Wardrobe 1-s.webp' %}" width="130" height="130" alt="Wordrop Armadio Gallery"></figure>
+                                    <div class="overlay"><span class="icon fa fa-arrows-alt"></span></div>
+                                </li>
+                                <li class="thumb-box">
+                                    <figure><img src="{% static 'images/resource/wordrop/Wardrobe 2-s.webp' %}" width="130" height="130" alt="Wordrop Armadio Gallery"></figure>
+                                    <div class="overlay"><span class="icon fa fa-arrows-alt"></span></div>
+                                </li>
+                                <li class="thumb-box">
+                                    <figure><img src="{% static 'images/resource/wordrop/Wardrobe 3-s.webp' %}" width="130" height="130" alt="Wordrop Armadio Gallery"></figure>
+                                    <div class="overlay"><span class="icon fa fa-arrows-alt"></span></div>
+                                </li>
+                                <li class="thumb-box">
+                                    <figure><img src="{% static 'images/resource/wordrop/Wardrobe 4-s.webp' %}" width="130" height="130" alt="Wordrop Armadio Gallery"></figure>
+                                    <div class="overlay"><span class="icon fa fa-search"></span></div>
+                                </li>
+                                <li class="thumb-box">
+                                    <figure><img src="{% static 'images/resource/wordrop/Wardrobe 1-s.webp' %}" width="130" height="130" alt="Wordrop Armadio Gallery"></figure>
+                                    <div class="overlay"><span class="icon fa fa-arrows-alt"></span></div>
+                                </li>
+                                <li class="thumb-box">
+                                    <figure><img src="{% static 'images/resource/wordrop/Wardrobe 2-s.webp' %}" width="130" height="130" alt="Wordrop Armadio Gallery"></figure>
+                                    <div class="overlay"><span class="icon fa fa-arrows-alt"></span></div>
+                                </li>
+                                <li class="thumb-box">
+                                    <figure><img src="{% static 'images/resource/wordrop/Wardrobe 3-s.webp' %}" width="130" height="130" alt="Wordrop Armadio Gallery"></figure>
+                                    <div class="overlay"><span class="icon fa fa-arrows-alt"></span></div>
+                                </li>
+                                <li class="thumb-box">
+                                    <figure><img src="{% static 'images/resource/wordrop/Wardrobe 4-s.webp' %}" width="130" height="130" alt="Wordrop Armadio Gallery"></figure>
+                                    <div class="overlay"><span class="icon fa fa-arrows-alt"></span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Wardrobe Service -->
+
+    <!-- Bathroom Service -->
+    <section class="news-section-two" id="bathroom">
+        <div class="auto-container">
+            <div class="sec-title">
+                <span class="float-text">{% trans "Services" %}</span>
+                <h2>{% trans "Bathroom Vanities" %}</h2>
+            </div>
+
+            <div class="row">
+                <div class="column col-lg-5 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <!-- News Block -->
+                        <div class="news-block-three">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/resource/bathroom/bathroom-1.webp' %}" width="435" height="490" alt="Bathroom Armadio Gallery"></figure>
+                                    <div class="overlay-box"></div>
+                                </div>
+                                <div class="content-box">
+                                    <h3><a href="#">{% trans "Elegant bathroom vanities" %}</a></h3>
+                                   
+                                    <div class="text">{% trans "There are many benefits to refurbishing or replacing your bathroom. A well planned bathroom can help to make the most of the space, making it feel far more spacious than you may have imagined possible." %}
+                                        {% trans "You can even add additional storage without losing that space. A beautiful bathroom adds style to your home, and can even add value." %}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column col-lg-7 col-md-12 col-sm-12">
+                    <div class="news-block-four">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="{% static 'images/resource/bathroom/bathroom-2.webp' %}" width="270" height="200" alt="Bathroom Armadio Gallery"></figure>
+                                <div class="overlay-box"></div>
+                            </div>
+                            <div class="content-box">
+                                <h3><a>{% trans "Simple design" %}</a></h3>
+                                <div class="text">{% trans "When you see new design with simple details, you always find yourself feel relax." %}<br>
+                                    {% trans "The small bathroom vanities is beautiful and practical, without wasting space." %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-block-four">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="{% static 'images/resource/bathroom/bathroom-3.webp' %}" width="270" height="200" alt="Bathroom Armadio Gallery"></figure>
+                                <div class="overlay-box"></div>
+                            </div>
+                            <div class="content-box">
+                                <h3><a>{% trans "Classic Design" %}</a></h3>
+                                <div class="text">{% trans "Incorporating the classic and modern style, to give a special character with the use of a large area that fits the existing space." %}
+                                    <br>{% trans "Your Bathroom will be different with special touch from our engineers." %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-block-four">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="{% static 'images/resource/bathroom/bathroom-4.webp' %}" width="270" height="200" alt="Bathroom Armadio Gallery"></figure>
+                                <div class="overlay-box"></div>
+                            </div>
+                            <div class="content-box">
+                                <h3><a>{% trans "Luxury Design" %}</a></h3>
+                                <div class="text">{% trans "The nicest part about choosing bathroom furniture is that you will never have to make edits." %}
+                                    {% trans "You can personalize the design to match your specific requirements." %}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Bathroom Service  -->
+
+    <!-- Wooden Section -->
+    <section class="products-section" id="cladding">
+        <div class="auto-container">
+            <div class="sec-title">
+                <span class="float-text">{% trans "Services" %}</span>
+                <h2>{% trans "Wooden cladding" %}</h2>
+            </div>
+            <div class="row">
+                <div class="title-column col-lg-3 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <h4>{% trans "Make your wall Different" %}</h4>
+                        <div class="text">{% trans "Wall decorative panels have become a popular and much-sought product for various interior solutions." %} 
+                            {% trans "Our design panels will help you to create a visually modern and comfortable space." %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-column col-lg-9 col-md-12 col-sm-12">
+                    <div class="products-carousel owl-carousel owl-theme">
+                        <!-- Product Block -->
+                        <div class="product-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/resource/wooden/wooden-1.webp' %}" width="270" height="390" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Block -->
+                        <div class="product-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/resource/wooden/wooden-2.webp' %}" width="270" height="390" alt="Wooden cladding Armadio Gallery"></figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Block -->
+                        <div class="product-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/resource/wooden/wooden-3.webp' %}" width="270" height="390" alt="Wooden cladding Armadio Gallery"></figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Block -->
+                        <div class="product-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/resource/wooden/wooden-4.webp' %}" width="270" height="390" alt="Wooden cladding Armadio Gallery"></figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Block -->
+                        <div class="product-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/resource/wooden/wooden-5.webp' %}" width="270" height="390" alt="Wooden cladding Armadio Gallery"></figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Block -->
+                        <div class="product-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'images/resource/wooden/wooden-6.webp' %}" width="270" height="390" alt="Wooden cladding Armadio Gallery"></figure>
+                                </div>
+                            </div>
+                        </div>
+
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Cladding Section -->
+
+
+    <!-- Our Project Section -->
+    <section class="projects-section" id="project">
+        <div class="auto-container">
+            <div class="sec-title text-right">
+                <span class="float-text">{% trans "Projects" %}</span>
+                <h2>{% trans 'Our Project' %}</h2>
+            </div>
+        </div>
+
+        <div class="inner-container">
+            <div class="projects-carousel owl-carousel owl-theme">
+                <!-- Project Block -->
+                <div class="project-block">
+                    <div class="image-box">
+                        <figure class="image"><img src="{% static 'images/gallery/project1.webp' %}" width="385" height="490" alt=""></figure>
+                        <div class="overlay-box">
+                            <div class="btn-box">
+                                <a href="{% static 'images/gallery/project1.webp' %}" width="385" height="490" class="lightbox-image" data-fancybox="gallery"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Block -->
+                <div class="project-block">
+                    <div class="image-box">
+                        <figure class="image"><img src="{% static 'images/gallery/project2.webp' %}" width="385" height="490" alt=""></figure>
+                        <div class="overlay-box">
+                            <div class="btn-box">
+                                <a href="{% static 'images/gallery/project2.webp' %}" width="385" height="490" class="lightbox-image" data-fancybox="gallery"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Block -->
+                <div class="project-block">
+                    <div class="image-box">
+                        <figure class="image"><img src="{% static 'images/gallery/project3.webp' %}" width="385" height="490" alt=""></figure>
+                        <div class="overlay-box">
+                            <div class="btn-box">
+                                <a href="{% static 'images/gallery/project3.webp' %}" width="385" height="490" class="lightbox-image" data-fancybox="gallery"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Block -->
+                <div class="project-block">
+                    <div class="image-box">
+                        <figure class="image"><img src="{% static 'images/gallery/project4.webp' %}" width="385" height="490" alt=""></figure>
+                        <div class="overlay-box">
+                            <div class="btn-box">
+                                <a href="{% static 'images/gallery/project4.webp' %}" width="385" height="490" class="lightbox-image" data-fancybox="gallery"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Block -->
+                <div class="project-block">
+                    <div class="image-box">
+                        <figure class="image"><img src="{% static 'images/gallery/project5.webp' %}" width="385" height="490" alt=""></figure>
+                        <div class="overlay-box">
+                            <div class="btn-box">
+                                <a href="{% static 'images/gallery/project5.webp' %}" width="385" height="490" class="lightbox-image" data-fancybox="gallery"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End Our Project Section -->
+
+    <!-- How We Work -->
+    <section class="fun-fact-and-features" >
+        <div class="outer-box">
+            <div class="auto-container">
+               <!-- Fact Counter -->
+               <div class="fact-counter">
+                <div class="row">
+                    <span class="float-text">{% trans "Projects" %}</span>
+                    <h1>{% trans "How We Work" %}</h1>
+                </div>
+            </div>
+
+                <!-- Features -->
+                <div class="features">
+                    <div class="row">
+                        <!-- Feature Block -->
+                        <div class="feature-block col-lg-4 col-md-6 col-sm-12">
+                            <div class="inner-box">
+                                <div class="icon-box"><span class="icon flaticon-decorating"></span></div>
+                                <h3><a>{% trans "Design" %}</a></h3>
+                                <div class="text">{% trans "Come to us with samples of the designs that you love and our innovative" %} 
+                                    {% trans "designers come up with a completely unique design that can make your furniture stand out from the rest." %}</div>
+                            </div>
+                        </div>
+
+                        <!-- Feature Block -->
+                        <div class="feature-block col-lg-4 col-md-6 col-sm-12">
+                            <div class="inner-box">
+                                <div class="icon-box"><span class="icon flaticon-plan"></span></div>
+                                <h3><a>{% trans "Planning" %}</a></h3>
+                                <div class="text">{% trans "We convert your rough sketch into an interactive 3D design which is the closest thing to reality." %}
+                                    {% trans "Only when you give your approval, does the actual process of creation begin." %}</div>
+                            </div>
+                        </div>
+
+                        <!-- Feature Block -->
+                        <div class="feature-block col-lg-4 col-md-6 col-sm-12">
+                            <div class="inner-box">
+                                <div class="icon-box"><span class="icon flaticon-sketch-3"></span></div>
+                                <h3><a>{% trans "Execute" %}</a></h3>
+                                <div class="text">{% trans "When your piece is ready after thorough inspection and finishing;" %} 
+                                    {% trans "we deliver it to your location and install it according to your preference, we deliver unique furniture." %}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End How We Work -->
+
+
+    <!-- Main Footer -->
+    <footer class="main-footer" style="background-image: url({% static 'images/background/3.webp' %});">
+        <div class="auto-container">
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row">
+                    <!--Big Column-->
+                    <div class="big-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                        <div class="row">
+                            <!--Footer Column-->
+                            <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget about-widget">
+                                    <div class="footer-logo">
+                                        <figure>
+                                            <a href="#">
+                                                {% get_current_language as LANGUAGE_CODE %}
+                                                {% if LANGUAGE_CODE == 'en' %}     
+                                                    <img src="{% static 'images/logo-style.png' %}" width="200" height="100" alt="logo-armadio-gallery" title=""></a>
+                                                {% else %} 
+                                                    <img src="{% static 'images/logo-style-rtl.png' %}" width="200" height="100" alt="logo-armadio-gallery" title=""></a>
+                                                {% endif %}   
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="widget-content">
+                                        <div class="text">
+                                            {% trans "Our strategy is to deliver a complete integrated solution featuring the very best in innovative design." %} 
+                                            {% trans "Whether your home is old or new, we’re confident that our designs will meet your expectations." %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget recent-posts">
+                                    <h2 class="widget-title">{% trans "Our Address" %}</h2>
+                                     <!--Footer Column-->
+                                    <div class="widget-content">
+                                        <p>{% trans "Prince Bandar Street, Al Khobar - Arabie saoudite" %}</p>
+                                        <iframe src="https://bit.ly/3qv0gdn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>     
+                            
+                        </div>
+                    </div>
+
+                    <!--Big Column-->
+                    <div class="big-column col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+                            <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
+                                 <div class="footer-widget links-widget">
+                                    <h2 class="widget-title">{% trans "Useful links" %}</h2>
+                                    <div class="widget-content">
+                                        <ul class="list">
+                                            <li><a href="#about">{% trans "About Us" %}</a></li>
+                                            <li><a href="#kitchen">{% trans "Kitchen Cabinet" %}</a></li>
+                                            <li><a href="#Wardrobe">{% trans "Wardrobe" %}</a></li>
+                                            <li><a href="#bathroom">{% trans "Bathroom Vanities" %}</a></li>
+                                            <li><a href="#cladding ">{% trans "Wooden cladding" %}</a></li>
+                                            <li><a href="#project">{% trans "Our Projects" %}</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget gallery-widget">
+                                    <h2 class="widget-title">{% trans "Recent Works" %}</h2>
+                                    <div class="widget-content">
+                                        <div class="outer clearfix">
+                                            <figure class="image">
+                                                <a href="{% static 'images/gallery/recent-work-big-1.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-1.webp' %}" width="80" height="70" alt=""></a>
+                                            </figure>
+
+                                            <figure class="image">
+                                                <a href="{% static 'images/gallery/recent-work-big-2.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-2.webp' %}" width="80" height="70" alt=""></a>
+                                            </figure>
+
+                                            <figure class="image">
+                                                <a href="{% static 'images/gallery/recent-work-big-3.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-3.webp' %}" width="80" height="70" alt=""></a>
+                                            </figure>
+
+                                            <figure class="image">
+                                                <a href="{% static 'images/gallery/recent-work-big-4.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-4.webp' %}" width="80" height="70" alt=""></a>
+                                            </figure>
+
+                                            <figure class="image">
+                                                <a href="{% static 'images/gallery/recent-work-big-5.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-5.webp' %}" width="80" height="70" alt=""></a>
+                                            </figure>
+
+                                            <figure class="image">
+                                                <a href="{% static 'images/gallery/recent-work-big-6.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-6.webp' %}" width="80" height="70" alt=""></a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <div class="social-links">
+                        <img src="{% static 'images/marketia-logo.png' %}" width="130" height="40" alt="Logo Marketia">
+                        <!-- <ul class="social-icon-two">
+                            <li><a href="https://instagram.com/armadio_arte?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/armadillogalle1/status/1499326460959547393?s=21" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://story.snapchat.com/u/armadio_elite?share_id=MDRCRTFE&locale=en_EG" target="_blank"><i class="fa fa-snapchat-ghost"></i></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=00966 59 542 4919" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                        </ul> -->
+                    </div>
+
+                    <div class="copyright-text">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% if LANGUAGE_CODE == 'en' %}     
+                        <p>{% trans "© 2022" %} {% trans "Armadio Gallery" %},
+                             {% trans "All right reserved" %}
+                        </p>
+                    {% else %}  
+                        <p>{% trans "All right reserved" %}  {% trans "Armadio Gallery" %} {% trans "© 2022" %}
+                            
+                        </p>  
+                    {% endif %}    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Main Footer -->
+
+</div>
+
+
+<!-- Chat Live -->
+<!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
+<div class="elfsight-app-7bd9530e-0ce6-4ee5-a439-7375d891abfc"></div>
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-o-up"></span></div>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script class="append-after-script" src="{% static 'js/script.js' %}"></script>
+<!-- Color Setting -->
+<script src="{% static 'js/color-settings.js' %}"></script>
+</body>
+</html>
