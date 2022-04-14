@@ -1541,7 +1541,7 @@ msgid ""
 "various interior solutions."
 msgstr ""
 "أصبحت الألواح الزخرفية للجدران منتجًا شائعًا ومطلوبًا كثيرًا للحلول الداخلية "
-"المختلفة,"
+"المختلفة،"
 
 #: templates/index.html:649
 msgid ""

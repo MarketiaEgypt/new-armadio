@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 {% load static %}
 {% load i18n %}
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <!-- SEO -->
     {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %} 
+    {% if LANGUAGE_CODE == 'ar' %} 
+    <meta name="title" content="أرماديو جاليري">
+    <meta name="url" content="www.armadiogallery.com">
+    <meta name="keywords" content="مطبخ - مطابخ المنيوم - خشب - أخشاب مع الضمان - ضمان - جودة اوروبية ايطالية - ايطالي - المانية - الماني - اسبانية - اسباني - اثاث مفروشات - تأثيث - موضة - خزائن - خزانة - دولاب - دواليب - جرانيت - رخام - المنيوم دبل - ارفف - أنيق - ارماديو جاليري - الخبر - الدمام - المنطقة الشرقية - السويكت- Armadio gallery - وحدة تخزين - وحدات تخزين - سوبرماركت عصري أنيق">
+    <meta name="image" content="Armadio Gallery - Service Armadio Gallery- Kitchen Armadio Gallery- Wordrop Armadio Gallery - Bathroom Armadio Gallery - Wooden cladding Armadio Gallery">
+    <meta name="description" content="شركة سعودية متخصصة في صناعة المطابخ، خزائن دريسينغ روم وكسوة الحائط بالخشب لإضافة لمسات عصرية وأنيقة لمنزلك">
+    {% else %}
+     <!-- <link rel="canonical" href="#">
+    <link rel="canonical" href="#"> -->
     <meta name="title" content="Armadio Gallery">
     <meta name="url" content="www.armadiogallery.com">
-    <meta name="keywords" content="Kitchen Cabinet,Wardrobe, Bathroom Vanities, Wooden cladding">
+    <meta name="keywords" content="Kitchen - Cabinet - Wardrobe - Bathroom - Vanities - Wooden - cladding">
     <meta name="image" content="Armadio Gallery - Service Armadio Gallery- Kitchen Armadio Gallery- Wordrop Armadio Gallery - Bathroom Armadio Gallery - Wooden cladding Armadio Gallery">
     <meta name="description" content="">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <!-- <link rel="canonical" href="https://demo1marketia.pythonanywhere.com/">
     <link rel="canonical" href="https://demo1marketia.pythonanywhere.com/#about"> -->
-    {% else %}
-    <meta name="title" content="أرماديو جاليري">
-    <meta name="url" content="www.armadiogallery.com">
-    <meta name="keywords" content="أرماديو جاليري - خدمات - مطابخ- خزائن دريسينج روم - المغاسل - الحائط الخشبي">
-    <meta name="image" content="Armadio Gallery - Service Armadio Gallery- Kitchen Armadio Gallery- Wordrop Armadio Gallery - Bathroom Armadio Gallery - Wooden cladding Armadio Gallery">
-    <meta name="description" content="شركة سعودية متخصصة في صناعة المطابخ، خزائن دريسينغ روم وكسوة الحائط بالخشب لإضافة لمسات عصرية وأنيقة لمنزلك">
-    <!-- <link rel="canonical" href="#">
-    <link rel="canonical" href="#"> -->
     {% endif %}
 
     <title>{% trans "Armadio Gallery" %}</title>
     <!-- Stylesheets -->
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %} 
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-    {% else %}
+    {% if LANGUAGE_CODE == 'ar' %} 
     <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet">
+    {% else %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
     {% endif %}
 
     <!--Color Themes-->
@@ -49,15 +49,14 @@
 
     <!-- Font Google -->
     {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %} 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
-    {% else %}
+    {% if LANGUAGE_CODE == 'ar' %} 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
-    
+    {% else %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
     {% endif %}
 
     <!-- Responsive -->
@@ -71,10 +70,10 @@
 <body>
 
 <div class="{% get_current_language as LANGUAGE_CODE %}
-            {% if LANGUAGE_CODE == 'en' %} 
-            page-wrapper 
+            {% if LANGUAGE_CODE == 'ar' %} 
+            rtl
             {% else %} 
-            rtl 
+            page-wrapper
             {% endif %} ">
     <!-- Preloader -->
     <div class="preloader"></div>
@@ -82,8 +81,8 @@
     <!-- Social Media -->
     <!-- Social Slider -->
     {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %} 
-        <div class="social-slider social-slider--left">
+    {% if LANGUAGE_CODE == 'ar' %} 
+        <div class="social-slider social-slider--right">
             <div class="social-slider__container">
                 <!-- One Icon -->
                 <div class="social-slider__button-container">
@@ -119,7 +118,7 @@
             </div>
         </div>
     {% else %} 
-        <div class="social-slider social-slider--right">
+        <div class="social-slider social-slider--left">
             <div class="social-slider__container">
                 <!-- One Icon -->
                 <div class="social-slider__button-container">
@@ -163,10 +162,10 @@
                     <div class="logo-box">
                         <div class="logo"><a href="/"> 
                         {% get_current_language as LANGUAGE_CODE %}
-                        {% if LANGUAGE_CODE == 'en' %}     
-                            <img src="{% static 'images/logo-style.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
-                        {% else %} 
+                        {% if LANGUAGE_CODE == 'ar' %}     
                             <img src="{% static 'images/logo-style-rtl.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
+                        {% else %} 
+                            <img src="{% static 'images/logo-style.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
                         {% endif %}   
                         </div>    
                     </div>
@@ -203,7 +202,12 @@
                                           {% for language in languages %}
                                               {% if language.code != LANGUAGE_CODE %}
                                                   <button type="submit" name="language" value="{{ language.code }}" class="btn-lang">
-                                                    <p class="language-box-btn">{{ language.code }}</p>
+                                                    <!-- <p class="language-box-btn">{{ language.code }}</p> -->
+                                                    {% if language.code == 'ar' %}    
+                                                        <img src="https://img.icons8.com/color/40/000000/saudi-arabia.png" style="margin-top: -4px;cursor: pointer;position: relative;"/>
+                                                    {% else %}    
+                                                        <img src="https://img.icons8.com/color/40/000000/usa.png" style="margin-top: -4px;cursor: pointer;position: relative;"/> 
+                                                    {% endif %}
                                                   </button>
                                               {% endif %}
                                           {% endfor %}
@@ -228,7 +232,12 @@
                                   {% for language in languages %}
                                       {% if language.code != LANGUAGE_CODE %}
                                           <button type="submit" name="language" value="{{ language.code }}" class="btn-lang">
-                                            <p class="language-box-btn">{{ language.code }}</p>
+                                            <!-- <p class="language-box-btn">{{ language.code }}</p> -->
+                                            {% if language.code == 'ar' %}    
+                                                <img src="https://img.icons8.com/color/40/000000/saudi-arabia.png" style="margin-top: -4px;cursor: pointer;position: relative;"/>
+                                            {% else %}    
+                                                <img src="https://img.icons8.com/color/40/000000/usa.png" style="margin-top: -4px;cursor: pointer;position: relative;"/> 
+                                            {% endif %}
                                           </button>
                                       {% endif %}
                                   {% endfor %}
@@ -316,7 +325,7 @@
                                 <img src="{% static 'images/resource/A-letter-cut.webp' %}" width="450" height="420" alt="Armadio Gallery">
                             {% endif %}    
                             </figure>
-                            <figure class="alphabet-img-responsive wow fadeInRight"><img src="{% static 'images/resource/Aletter-3.webp' %}" width="450" height="420" alt="Armadio Gallery"></figure>
+                            <figure class="alphabet-img-responsive wow fadeInRight"><img src="{% static 'images/resource/AG.webp' %}" width="450" height="420" alt="Armadio Gallery"></figure>
                             <figure class="image wow fadeInRight" data-wow-delay='600ms'><img src="{% static 'images/resource/G-letter.webp' %}" width="355" height="635" alt="Armadio Gallery"></figure>
                         </div>
                     </div>
@@ -998,7 +1007,7 @@
 
 <!-- Chat Live -->
 <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
-<div class="elfsight-app-7bd9530e-0ce6-4ee5-a439-7375d891abfc"></div>
+<div class="elfsight-app-78e81372-a316-4e11-a063-cfbe4bf1127a"></div>
 
 
 <!--Scroll to top-->
