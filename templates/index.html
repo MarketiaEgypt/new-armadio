@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 {% load static %}
 {% load i18n %}
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <!-- SEO -->
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'ar' %} 
-    <meta name="title" content="أرماديو جاليري">
-    <meta name="url" content="www.armadiogallery.com">
-    <meta name="keywords" content="مطبخ - مطابخ المنيوم - خشب - أخشاب مع الضمان - ضمان - جودة اوروبية ايطالية - ايطالي - المانية - الماني - اسبانية - اسباني - اثاث مفروشات - تأثيث - موضة - خزائن - خزانة - دولاب - دواليب - جرانيت - رخام - المنيوم دبل - ارفف - أنيق - ارماديو جاليري - الخبر - الدمام - المنطقة الشرقية - السويكت- Armadio gallery - وحدة تخزين - وحدات تخزين - سوبرماركت عصري أنيق">
-    <meta name="image" content="Armadio Gallery - Service Armadio Gallery- Kitchen Armadio Gallery- Wordrop Armadio Gallery - Bathroom Armadio Gallery - Wooden cladding Armadio Gallery">
-    <meta name="description" content="شركة سعودية متخصصة في صناعة المطابخ، خزائن دريسينغ روم وكسوة الحائط بالخشب لإضافة لمسات عصرية وأنيقة لمنزلك">
-    {% else %}
-     <!-- <link rel="canonical" href="#">
-    <link rel="canonical" href="#"> -->
     <meta name="title" content="Armadio Gallery">
     <meta name="url" content="www.armadiogallery.com">
     <meta name="keywords" content="Kitchen - Cabinet - Wardrobe - Bathroom - Vanities - Wooden - cladding">
@@ -23,6 +15,14 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <!-- <link rel="canonical" href="https://demo1marketia.pythonanywhere.com/">
     <link rel="canonical" href="https://demo1marketia.pythonanywhere.com/#about"> -->
+    {% else %}
+     <!-- <link rel="canonical" href="#">
+    <link rel="canonical" href="#"> -->
+    <meta name="title" content="أرماديو جاليري">
+    <meta name="url" content="www.armadiogallery.com">
+    <meta name="keywords" content="مطبخ - مطابخ المنيوم - خشب - أخشاب مع الضمان - ضمان - جودة اوروبية ايطالية - ايطالي - المانية - الماني - اسبانية - اسباني - اثاث مفروشات - تأثيث - موضة - خزائن - خزانة - دولاب - دواليب - جرانيت - رخام - المنيوم دبل - ارفف - أنيق - ارماديو جاليري - الخبر - الدمام - المنطقة الشرقية - السويكت- Armadio gallery - وحدة تخزين - وحدات تخزين - سوبرماركت عصري أنيق">
+    <meta name="image" content="Armadio Gallery - Service Armadio Gallery- Kitchen Armadio Gallery- Wordrop Armadio Gallery - Bathroom Armadio Gallery - Wooden cladding Armadio Gallery">
+    <meta name="description" content="شركة سعودية متخصصة في صناعة المطابخ، خزائن دريسينغ روم وكسوة الحائط بالخشب لإضافة لمسات عصرية وأنيقة لمنزلك">
     {% endif %}
 
     <title>{% trans "Armadio Gallery" %}</title>
@@ -81,8 +81,8 @@
     <!-- Social Media -->
     <!-- Social Slider -->
     {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'ar' %} 
-        <div class="social-slider social-slider--right">
+    {% if LANGUAGE_CODE == 'en' %} 
+        <div class="social-slider social-slider--left">
             <div class="social-slider__container">
                 <!-- One Icon -->
                 <div class="social-slider__button-container">
@@ -118,7 +118,7 @@
             </div>
         </div>
     {% else %} 
-        <div class="social-slider social-slider--left">
+        <div class="social-slider social-slider--right">
             <div class="social-slider__container">
                 <!-- One Icon -->
                 <div class="social-slider__button-container">
