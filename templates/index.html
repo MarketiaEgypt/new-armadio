@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <!-- SEO -->
     {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'ar' %} 
+    {% if LANGUAGE_CODE == 'en' %} 
     <meta name="title" content="Armadio Gallery">
     <meta name="url" content="www.armadiogallery.com">
     <meta name="keywords" content="Kitchen - Cabinet - Wardrobe - Bathroom - Vanities - Wooden - cladding">
     <meta name="image" content="Armadio Gallery - Service Armadio Gallery- Kitchen Armadio Gallery- Wordrop Armadio Gallery - Bathroom Armadio Gallery - Wooden cladding Armadio Gallery">
     <meta name="description" content="">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="canonical" href="https://demo1marketia.pythonanywhere.com/">
     <link rel="canonical" href="https://demo1marketia.pythonanywhere.com/#about"> -->
     {% else %}
@@ -29,12 +29,12 @@
     <!-- Stylesheets -->
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'ar' %} 
-    <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet">
-    <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet">
-    {% else %}
+    {% if LANGUAGE_CODE == 'en' %} 
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    {% else %}
+    <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet">    
     {% endif %}
 
     <!--Color Themes-->
@@ -49,14 +49,14 @@
 
     <!-- Font Google -->
     {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'ar' %} 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
-    {% else %}
+    {% if LANGUAGE_CODE == 'en' %} 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
+    {% else %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
     {% endif %}
 
     <!-- Responsive -->
@@ -70,10 +70,10 @@
 <body>
 
 <div class="{% get_current_language as LANGUAGE_CODE %}
-            {% if LANGUAGE_CODE == 'ar' %} 
-            rtl
+            {% if LANGUAGE_CODE == 'en' %} 
+            page-wrapper 
             {% else %} 
-            page-wrapper
+            rtl
             {% endif %} ">
     <!-- Preloader -->
     <div class="preloader"></div>
@@ -162,10 +162,10 @@
                     <div class="logo-box">
                         <div class="logo"><a href="/"> 
                         {% get_current_language as LANGUAGE_CODE %}
-                        {% if LANGUAGE_CODE == 'ar' %}     
-                            <img src="{% static 'images/logo-style-rtl.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
-                        {% else %} 
+                        {% if LANGUAGE_CODE == 'en' %}     
                             <img src="{% static 'images/logo-style.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
+                        {% else %} 
+                            <img src="{% static 'images/logo-style-rtl.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
                         {% endif %}   
                         </div>    
                     </div>
