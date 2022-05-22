@@ -8,22 +8,18 @@
     <title>{% trans "Armadio Gallery" %}</title>
 
     <!-- Stylesheets -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"></noscript>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" defer>
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'en' %} 
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
     {% else %}
-    <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="{% static 'css/style-rtl.css' %}" rel="stylesheet"></noscript>
-    <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet"></noscript>
+    <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet" defer>
+    <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet" defer>
     {% endif %}
 
     <!--Color Themes-->
-    <link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet"></noscript>
+    <link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet" defer>
 
     <link rel="shortcut icon" href="{% static 'images/logo-icon.png' %}" type="image/x-icon">
     <link rel="icon" href="{% static 'images/logo-icon.png' %}" type="image/x-icon">
@@ -37,11 +33,11 @@
     {% if LANGUAGE_CODE == 'en' %} 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
     {% else %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"  as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"  as="style">
     <noscript><link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"></noscript>
     {% endif %}
 
