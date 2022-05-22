@@ -2497,7 +2497,8 @@ header-style-seven .nav-toggler:hover{
 	display: block;
 	font-size: 48px;
 	line-height: 72px;
-	color: #ffffff;
+	color: #000;
+	text-shadow: 4px 4px 4px #fff;
 	font-weight: 700;
 	margin-bottom: 30px;
 	opacity: 0;
@@ -2532,8 +2533,9 @@ header-style-seven .nav-toggler:hover{
 	display: block;
 	font-size: 24px;
 	line-height: 1.2em;
-	color: #ffffff;
-	font-weight: 400;
+	color: #000;
+	text-shadow: 4px 4px 4px #fff;
+	font-weight: 600;
 	margin-bottom: 55px;
 	opacity: 0;
 	-webkit-transition: all 1000ms ease;

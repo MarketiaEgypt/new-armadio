@@ -1218,7 +1218,7 @@ msgstr ""
 #: templates/index.html:92 templates/index.html:107 templates/index.html:117
 #: templates/index.html:128 templates/index.html:311 templates/index.html:968
 msgid "Armadio Gallery"
-msgstr "أرماديو جاليري"
+msgstr " ارماديو جاليري"
 
 #: templates/index.html:166
 msgid "Home"
@@ -1226,7 +1226,7 @@ msgstr "الرئيسية"
 
 #: templates/index.html:167 templates/index.html:903
 msgid "About Us"
-msgstr "عن أرماديو"
+msgstr "عن ارماديو"
 
 #: templates/index.html:168 templates/index.html:347 templates/index.html:415
 #: templates/index.html:427 templates/index.html:441 templates/index.html:456
