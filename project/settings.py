@@ -42,6 +42,9 @@ INSTALLED_APPS = [
 
     # My Apps
     'Armadio',
+    'blog',
+    'taggit',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -109,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'ar'
+LANGUAGE_CODE = 'en'
 
 LANGUAGES = [
     ('ar', 'العربية'),

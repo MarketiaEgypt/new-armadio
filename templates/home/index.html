@@ -1,238 +1,7 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %}
 {% load i18n %}
-<html>
-<head>
-    <meta charset="UTF-8">
-    <!-- SEO -->
-    <title>{% trans "Armadio Gallery" %}</title>
-
-    <!-- Stylesheets -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" defer>
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %} 
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-    {% else %}
-    <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet" defer>
-    <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet" defer>
-    {% endif %}
-
-    <!--Color Themes-->
-    <link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet" defer>
-
-    <link rel="shortcut icon" href="{% static 'images/logo-icon.png' %}" type="image/x-icon">
-    <link rel="icon" href="{% static 'images/logo-icon.png' %}" type="image/x-icon">
-
-    <!-- Font Icon -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
-
-    <!-- Font Google -->
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %} 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-    {% else %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"  as="style">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"></noscript>
-    {% endif %}
-
-    <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="title" content="Armadio Gallery">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-</head>
-
-<body>
-
-<div class="{% get_current_language as LANGUAGE_CODE %}
-            {% if LANGUAGE_CODE == 'en' %} 
-            page-wrapper 
-            {% else %} 
-            rtl
-            {% endif %} ">
-    <!-- Preloader -->
-<!--    <div class="preloader"></div>-->
-
-    <!-- Social Media -->
-    <!-- Social Slider -->
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %} 
-        <div class="social-slider social-slider--left">
-            <div class="social-slider__container">
-                <!-- One Icon -->
-                <div class="social-slider__button-container">
-                    <a class="social-slider__button" href="https://instagram.com/armadio_arte?utm_medium=copy_link" target="_blank" rel="me">
-                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
-                        <span class="social-slider__circle">
-                            <i class="fa fa-instagram"></i>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Two Icon -->
-                <div class="social-slider__button-container">
-                    <a class="social-slider__button" href="https://story.snapchat.com/u/armadio_elite?share_id=MDRCRTFE&locale=en_EG" target="_blank" rel="me">
-                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
-                        <span class="social-slider__circle">
-                            <i class="fa fa-snapchat-ghost"></i>
-                        </span>
-                    </a>
-                </div>
-                
-
-                <!-- Three Icon -->
-                <div class="social-slider__button-container">
-                    <a class="social-slider__button" href="https://twitter.com/armadillogalle1/status/1499326460959547393?s=21" target="_blank" rel="me">
-                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
-                        <span class="social-slider__circle">
-                            <i class="fa fa-twitter"></i>
-                        </span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    {% else %} 
-        <div class="social-slider social-slider--right">
-            <div class="social-slider__container">
-                <!-- One Icon -->
-                <div class="social-slider__button-container">
-                    <a class="social-slider__button" href="https://instagram.com/armadio_arte?utm_medium=copy_link" target="_blank" rel="me">
-                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
-                        <span class="social-slider__circle">
-                            <i class="fa fa-instagram"></i>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Two Icon -->
-                <div class="social-slider__button-container">
-                    <a class="social-slider__button" href="https://story.snapchat.com/u/armadio_elite?share_id=MDRCRTFE&locale=en_EG" target="_blank" rel="me">
-                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
-                        <span class="social-slider__circle">
-                            <i class="fa fa-snapchat-ghost"></i>
-                        </span>
-                    </a>
-                </div>
-                
-
-                <!-- Three Icon -->
-                <div class="social-slider__button-container">
-                    <a class="social-slider__button" href="https://twitter.com/armadillogalle1/status/1499326460959547393?s=21" target="_blank" rel="me">
-                        <p class="social-slider__label">{% trans "Armadio Gallery" %}</p>
-                        <span class="social-slider__circle">
-                            <i class="fa fa-twitter"></i>
-                        </span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    {% endif %}    
-    <!-- Main Header-->
-    <header class="main-header header-style-one">
-        <div class="auto-container">
-            <div class="header-lower">
-                <div class="main-box clearfix">
-                    <div class="logo-box">
-                        <div class="logo"><a href="/"> 
-                        {% get_current_language as LANGUAGE_CODE %}
-                        {% if LANGUAGE_CODE == 'en' %}     
-                            <img src="{% static 'images/logo-style.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
-                        {% else %} 
-                            <img src="{% static 'images/logo-style-rtl.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
-                        {% endif %}   
-                        </div>    
-                    </div>
-
-                    <div class="nav-outer clearfix">
-                        <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-md ">
-                            <div class="navbar-header">
-                                <!-- Toggle Button -->
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="icon flaticon-menu-button"></span>
-                                </button>
-                            </div>
-
-                            <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-                                <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">{% trans "Home" %}</a></li>
-                                    <li class="dropdown"><a href="#about">{% trans "About Us" %}</a></li>
-                                    <li class="dropdown"><a href="#kitchen">{% trans "Kitchen Cabinet" %}</a></li>
-                                    <li class="dropdown"><a href="#Wardrobe">{% trans "Wardrobe" %}</a></li>
-                                    <li class="dropdown"><a href="#bathroom">{% trans "Bathroom Vanities" %}</a></li>
-                                    <li class="dropdown"><a href="#cladding">{% trans "Wooden cladding" %}</a></li>
-                                    <li class="dropdown"><a href="#project">{% trans "Our Projects" %}</a></li>                                   
-                                </ul>
-                                <!-- Outer Box-->
-                                <div class="outer-box-nav">
-                                    <!--Language Box-->
-                                    {% get_current_language as LANGUAGE_CODE %}
-                                    {% get_available_languages as LANGUAGES %}
-                                    {% get_language_info_list for LANGUAGES as languages %}
-                                    <form action="{% url 'set_language' %}" method="post" class="language-box-outer">
-                                        {% csrf_token %}
-                                        <input name="next" type="hidden" value="{{ redirect_to }}" />
-                                          {% for language in languages %}
-                                              {% if language.code != LANGUAGE_CODE %}
-                                                  <button type="submit" name="language" value="{{ language.code }}" class="btn-lang">
-                                                    <!-- <p class="language-box-btn">{{ language.code }}</p> -->
-                                                    {% if language.code == 'ar' %}    
-                                                        <img src="https://img.icons8.com/color/40/000000/saudi-arabia.png" style="margin-top: -4px;cursor: pointer;position: relative;"/>
-                                                    {% else %}    
-                                                        <img src="https://img.icons8.com/color/40/000000/usa.png" style="margin-top: -4px;cursor: pointer;position: relative;"/> 
-                                                    {% endif %}
-                                                  </button>
-                                              {% endif %}
-                                          {% endfor %}
-                                      </form>
-                                </div>
-
-                            </div>
-                              
-                            
-                        </nav><!-- Main Menu End-->
-                        
-                        
-                        <!-- Outer Box-->
-                        <div class="outer-box">
-                            <!--Language Box-->
-                            {% get_current_language as LANGUAGE_CODE %}
-                            {% get_available_languages as LANGUAGES %}
-                            {% get_language_info_list for LANGUAGES as languages %}
-                            <form action="{% url 'set_language' %}" method="post" class="language-box-outer">
-                                {% csrf_token %}
-                                <input name="next" type="hidden" value="{{ redirect_to }}" />
-                                  {% for language in languages %}
-                                      {% if language.code != LANGUAGE_CODE %}
-                                          <button type="submit" name="language" value="{{ language.code }}" class="btn-lang">
-                                            <!-- <p class="language-box-btn">{{ language.code }}</p> -->
-                                            {% if language.code == 'ar' %}    
-                                                <img src="https://img.icons8.com/color/40/000000/saudi-arabia.png" style="margin-top: -4px;cursor: pointer;position: relative;"/>
-                                            {% else %}    
-                                                <img src="https://img.icons8.com/color/40/000000/usa.png" style="margin-top: -4px;cursor: pointer;position: relative;"/> 
-                                            {% endif %}
-                                          </button>
-                                      {% endif %}
-                                  {% endfor %}
-                              </form>
-                           
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--End Main Header -->
+{% block body %}
 
     <!-- Banner Section -->
     <section class="banner-section">
@@ -845,165 +614,35 @@
     </section>
     <!--End How We Work -->
 
-
-    <!-- Main Footer -->
-    <footer class="main-footer" style="background-image: url({% static 'images/background/3.webp' %});">
+    <!-- News Section -->
+    <section class="news-section" id="blog_id">
         <div class="auto-container">
-            <!--Widgets Section-->
-            <div class="widgets-section">
-                <div class="row">
-                    <!--Big Column-->
-                    <div class="big-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row">
-                            <!--Footer Column-->
-                            <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget about-widget">
-                                    <div class="footer-logo">
-                                        <figure>
-                                            <a href="#">
-                                                {% get_current_language as LANGUAGE_CODE %}
-                                                {% if LANGUAGE_CODE == 'en' %}     
-                                                    <img src="{% static 'images/logo-style.png' %}" width="200" height="100" alt="logo-armadio-gallery" title=""></a>
-                                                {% else %} 
-                                                    <img src="{% static 'images/logo-style-rtl.png' %}" width="200" height="100" alt="logo-armadio-gallery" title=""></a>
-                                                {% endif %}   
-                                            </a>
-                                        </figure>
-                                    </div>
-                                    <div class="widget-content">
-                                        <div class="text">
-                                            {% trans "Our strategy is to deliver a complete integrated solution featuring the very best in innovative design." %} 
-                                            {% trans "Whether your home is old or new, we’re confident that our designs will meet your expectations." %}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Footer Column-->
-                            <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget recent-posts">
-                                    <h2 class="widget-title">{% trans "Our Address" %}</h2>
-                                     <!--Footer Column-->
-                                    <div class="widget-content">
-                                        <p>{% trans "Prince Bandar Street, Al Khobar - Arabie saoudite" %}</p>
-                                        <iframe src="https://bit.ly/3qv0gdn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                    </div>
-                                </div>
-                            </div>     
-                            
+            <div class="sec-title">
+                <span class="float-text">{% trans "Blogs" %}</span>
+                <h2>{% trans "Articles" %}</h2>
+            </div>
+            <div class="row m-auto">
+                {% for post in posts %}
+                <!-- News Block -->
+                <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{{post.image_home.url}}" alt=""></figure>
+                            <div class="overlay-box"><a href="{{post.get_absolute_url}}"></a></div>
                         </div>
-                    </div>
-
-                    <!--Big Column-->
-                    <div class="big-column col-xl-5 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row clearfix">
-                            <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
-                                 <div class="footer-widget links-widget">
-                                    <h2 class="widget-title">{% trans "Useful links" %}</h2>
-                                    <div class="widget-content">
-                                        <ul class="list">
-                                            <li><a href="#about">{% trans "About Us" %}</a></li>
-                                            <li><a href="#kitchen">{% trans "Kitchen Cabinet" %}</a></li>
-                                            <li><a href="#Wardrobe">{% trans "Wardrobe" %}</a></li>
-                                            <li><a href="#bathroom">{% trans "Bathroom Vanities" %}</a></li>
-                                            <li><a href="#cladding ">{% trans "Wooden cladding" %}</a></li>
-                                            <li><a href="#project">{% trans "Our Projects" %}</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Footer Column-->
-                            <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget gallery-widget">
-                                    <h2 class="widget-title">{% trans "Recent Works" %}</h2>
-                                    <div class="widget-content">
-                                        <div class="outer clearfix">
-                                            <figure class="image">
-                                                <a href="{% static 'images/gallery/recent-work-big-1.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-1.webp' %}" width="80" height="70" alt=""></a>
-                                            </figure>
-
-                                            <figure class="image">
-                                                <a href="{% static 'images/gallery/recent-work-big-2.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-2.webp' %}" width="80" height="70" alt=""></a>
-                                            </figure>
-
-                                            <figure class="image">
-                                                <a href="{% static 'images/gallery/recent-work-big-3.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-3.webp' %}" width="80" height="70" alt=""></a>
-                                            </figure>
-
-                                            <figure class="image">
-                                                <a href="{% static 'images/gallery/recent-work-big-4.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-4.webp' %}" width="80" height="70" alt=""></a>
-                                            </figure>
-
-                                            <figure class="image">
-                                                <a href="{% static 'images/gallery/recent-work-big-5.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-5.webp' %}" width="80" height="70" alt=""></a>
-                                            </figure>
-
-                                            <figure class="image">
-                                                <a href="{% static 'images/gallery/recent-work-big-6.png' %}" class="lightbox-image" title="Image Title Here"><img src="{% static 'images/resource/footer-images/recent-works-6.webp' %}" width="80" height="70" alt=""></a>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="caption-box">
+                            <h3><a href="{{post.get_absolute_url}}">{{post.title}}</a></h3>
+                            <ul class="info">
+                                <li>{{post.created_at|date:"F j, Y"}}</li>
+                                <li>{{post.author}}</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
         </div>
+    </section>
+    <!--End News Section -->
 
-        <!--Footer Bottom-->
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="inner-container clearfix">
-                    <div class="social-links">
-                        <img src="{% static 'images/marketia-logo.png' %}" width="130" height="40" alt="Logo Marketia">
-                        <!-- <ul class="social-icon-two">
-                            <li><a href="https://instagram.com/armadio_arte?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://twitter.com/armadillogalle1/status/1499326460959547393?s=21" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://story.snapchat.com/u/armadio_elite?share_id=MDRCRTFE&locale=en_EG" target="_blank"><i class="fa fa-snapchat-ghost"></i></a></li>
-                            <li><a href="https://api.whatsapp.com/send?phone=00966 59 542 4919" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-                        </ul> -->
-                    </div>
-
-                    <div class="copyright-text">
-                    {% get_current_language as LANGUAGE_CODE %}
-                    {% if LANGUAGE_CODE == 'en' %}     
-                        <p>{% trans "© 2022" %} {% trans "Armadio Gallery" %},
-                             {% trans "All right reserved" %}
-                        </p>
-                    {% else %}  
-                        <p>{% trans "All right reserved" %}  {% trans "Armadio Gallery" %} {% trans "© 2022" %}
-                            
-                        </p>  
-                    {% endif %}    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Main Footer -->
-
-</div>
-
-
-<!-- Chat Live -->
-<!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
-<div class="elfsight-app-78e81372-a316-4e11-a063-cfbe4bf1127a"></div>
-
-
-<!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-o-up"></span></div>
-<script src="{% static 'js/jquery.js' %}"></script>
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/jquery.fancybox.js' %}"></script>
-<script src="{% static 'js/owl.js' %}"></script>
-<script src="{% static 'js/wow.js' %}"></script>
-<script src="{% static 'js/appear.js' %}"></script>
-<script src="{% static 'js/mixitup.js' %}"></script>
-<script class="append-after-script" src="{% static 'js/script.js' %}"></script>
-<!-- Color Setting -->
-<script src="{% static 'js/color-settings.js' %}"></script>
-</body>
-</html>
+{% endblock body %}

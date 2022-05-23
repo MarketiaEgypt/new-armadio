@@ -218,7 +218,7 @@ ul,li{
 	text-transform: capitalize;
 	font-weight: bolder;
 	border-radius: 50px;
-	background: rgb(255,174,0);
+	background: #b09754 !important;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYWUwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjhhMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -moz-linear-gradient(top, rgba(255,174,0,1) 0%, rgba(255,138,0,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(255,174,0,1) 0%,rgba(255,138,0,1) 100%);
@@ -1070,7 +1070,7 @@ img{
 
 .header-style-one .outer-box{
 	padding: 32.5px 0;
-	margin-left: 45px;
+	margin-left: 20px;
 }
 
 .header-style-one .search-box-btn:hover{
@@ -2503,8 +2503,8 @@ header-style-seven .nav-toggler:hover{
 	display: block;
 	font-size: 48px;
 	line-height: 72px;
-	color: #000;
-	text-shadow: 4px 4px 4px #fff;
+	color: #fff;
+	text-shadow: 0px 0px 4px #a62927;
 	font-weight: 700;
 	margin-bottom: 30px;
 	opacity: 0;
@@ -2539,8 +2539,8 @@ header-style-seven .nav-toggler:hover{
 	display: block;
 	font-size: 24px;
 	line-height: 1.2em;
-	color: #000;
-	text-shadow: 4px 4px 4px #fff;
+	color: #fff;
+	text-shadow: 0px 0px 4px #a62927;
 	font-weight: 400;
 	margin-bottom: 55px;
 	opacity: 0;
@@ -4110,6 +4110,7 @@ header-style-seven .nav-toggler:hover{
 	background-size:cover;
 	background-position:center center;
 	background-repeat:no-repeat;
+	background-image: url(../images/resource/blog/Cover-Eng.png);
 }
 
 .page-title:before{
@@ -7986,7 +7987,7 @@ header-style-seven .nav-toggler:hover{
 
 .news-block{
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 10%;
 	z-index: 1;
 }
 
@@ -8942,16 +8943,16 @@ header-style-seven .nav-toggler:hover{
 }
 
 .blog-detail .news-block-two .caption-box blockquote{
-	position: relative;
-	display: block;
-	padding-left: 40px;
-	font-size: 16px;
-	line-height: 30px;
-	color: #252525;
-	font-weight: 400;
-	font-style: italic;
-	margin-bottom: 30px;
-	padding-top: 15px;
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #a62927;
+    font-weight: 600;
+    /* font-style: italic; */
+    margin-bottom: 30px;
+    padding-top: 15px;
 }
 
 .blog-detail .news-block-two .caption-box blockquote .icon{
@@ -8973,7 +8974,7 @@ header-style-seven .nav-toggler:hover{
 	position: relative;
 	float: left;
 	margin-right: 23px;
-	font-size: 15px;
+	font-size: 22px;
 	line-height: 25px;
 	color: #222222;
 	font-weight: 500;
@@ -9020,7 +9021,7 @@ header-style-seven .nav-toggler:hover{
 	position: relative;
 	display: block;
 	margin-right: 23px;
-	font-size: 15px;
+	font-size: 22px;
 	line-height: 25px;
 	color: #222222;
 	font-weight: 500;
@@ -9998,7 +9999,7 @@ header-style-seven .nav-toggler:hover{
 
 .tag-list{
 	position: relative;
-	display: block;
+	display: inline-block;
 }
 
 .tag-list li{
@@ -10014,7 +10015,7 @@ header-style-seven .nav-toggler:hover{
     font-size: 14px;
     color: #777777;
     line-height: 25px;
-    padding: 10px 35px;
+    padding: 7px 22px;
     font-weight: 400;
     text-align: center;
     border-radius: 50px;
@@ -12585,7 +12586,7 @@ header-style-seven .nav-toggler:hover{
 
 .rtl .header-style-one .outer-box{
 	margin-left: 0;
-	margin-right: 45px;
+	margin-right: 20px;
 }
 
 .rtl .fixed-header .sticky-header .logo{
@@ -13476,7 +13477,7 @@ div.eapps-widget {
 }
 
 .header-style-one .main-menu .navigation > li{
-	margin-left: 20px;
+	margin-left: 16px;
 }
 /* .main-footer .footer-bottom .copyright-text a{
 	color: #a62927;
