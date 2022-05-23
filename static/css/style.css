@@ -2504,7 +2504,7 @@ header-style-seven .nav-toggler:hover{
 	font-size: 48px;
 	line-height: 72px;
 	color: #fff;
-	text-shadow: 0px 0px 4px #a62927;
+	/* text-shadow: 0px 0px 4px #a62927; */
 	font-weight: 700;
 	margin-bottom: 30px;
 	opacity: 0;
@@ -2540,7 +2540,7 @@ header-style-seven .nav-toggler:hover{
 	font-size: 24px;
 	line-height: 1.2em;
 	color: #fff;
-	text-shadow: 0px 0px 4px #a62927;
+	/* text-shadow: 0px 0px 4px #a62927; */
 	font-weight: 400;
 	margin-bottom: 55px;
 	opacity: 0;
@@ -5526,7 +5526,7 @@ header-style-seven .nav-toggler:hover{
 	background-position: center;
 	background-size: cover;
 	padding: 100px 0 0;
-	margin-bottom: 14%;
+	margin-bottom: 9%;
 }
 
 .fun-fact-and-features:before{
@@ -7951,7 +7951,7 @@ header-style-seven .nav-toggler:hover{
 
 .news-section{
 	position: relative;
-	padding: 100px 0 70px;
+	padding: 0px 0 70px;
 }
 
 .news-section:before{
