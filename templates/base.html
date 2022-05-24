@@ -8,25 +8,21 @@
     <title>{% trans "Armadio Gallery" %}</title>
 
     <!-- Stylesheets -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" defer>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" async="async">
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'en' %}
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
     {% else %}
-    <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet" defer>
-    <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet" defer>
+    <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet" async="async">
+    <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet" async="async">
     {% endif %}
 
     <!--Color Themes-->
-    <link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet" defer>
+    <link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet">
 
-    <link rel="shortcut icon" href="{% static 'images/logo-icon.png' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'images/logo-icon.webp' %}" type="image/x-icon">
     <link rel="icon" href="{% static 'images/logo-icon.png' %}" type="image/x-icon">
-
-    <!-- Font Icon -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
 
     <!-- Font Google -->
     {% get_current_language as LANGUAGE_CODE %}
@@ -38,15 +34,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"  as="style">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"></noscript>
     {% endif %}
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="title" content="Armadio Gallery">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+   
 </head>
 <body>
 <div class="{% get_current_language as LANGUAGE_CODE %}{% if LANGUAGE_CODE == 'en' %} page-wrapper {% else %} rtl{% endif %} ">
@@ -139,9 +133,9 @@
                         <div class="logo"><a href="/">
                         {% get_current_language as LANGUAGE_CODE %}
                         {% if LANGUAGE_CODE == 'en' %}
-                            <img src="{% static 'images/logo-style.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
+                            <img src="{% static 'images/logo-style.webp' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
                         {% else %}
-                            <img src="{% static 'images/logo-style-rtl.png' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
+                            <img src="{% static 'images/logo-style-rtl.webp' %}" width="200" height="100" alt="Armadio Gallery" title=""></a>
                         {% endif %}
                         </div>
                     </div>
@@ -343,7 +337,7 @@
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <div class="social-links">
-                        <img src="{% static 'images/marketia-logo.png' %}" width="130" height="40" alt="Logo Marketia">
+                        <img src="{% static 'images/marketia-logo.webp' %}" width="130" height="40" alt="Logo Marketia">
                         <!-- <ul class="social-icon-two">
                             <li><a href="https://instagram.com/armadio_arte?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="https://twitter.com/armadillogalle1/status/1499326460959547393?s=21" target="_blank"><i class="fa fa-twitter"></i></a></li>
