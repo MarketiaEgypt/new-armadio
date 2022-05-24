@@ -22,7 +22,7 @@
     <link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet">
 
     <link rel="shortcut icon" href="{% static 'images/logo-icon.webp' %}" type="image/x-icon">
-    <link rel="icon" href="{% static 'images/logo-icon.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/logo-icon.webp' %}" type="image/x-icon">
 
     <!-- Font Google -->
     {% get_current_language as LANGUAGE_CODE %}
@@ -152,14 +152,14 @@
 
                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">{% trans "Home" %}</a></li>
-                                    <li class="dropdown"><a href="#about">{% trans "About Us" %}</a></li>
-                                    <li class="dropdown"><a href="#kitchen">{% trans "Kitchen Cabinet" %}</a></li>
-                                    <li class="dropdown"><a href="#Wardrobe">{% trans "Wardrobe" %}</a></li>
-                                    <li class="dropdown"><a href="#bathroom">{% trans "Bathroom Vanities" %}</a></li>
-                                    <li class="dropdown"><a href="#cladding">{% trans "Wooden cladding" %}</a></li>
+                                    <li class="current dropdown"><a href="/">{% trans "Home" %}</a></li>
+                                    <li class="dropdown"><a href="/#about">{% trans "About Us" %}</a></li>
+                                    <li class="dropdown"><a href="/#kitchen">{% trans "Kitchen Cabinet" %}</a></li>
+                                    <li class="dropdown"><a href="/#Wardrobe">{% trans "Wardrobe" %}</a></li>
+                                    <li class="dropdown"><a href="/#bathroom">{% trans "Bathroom Vanities" %}</a></li>
+                                    <li class="dropdown"><a href="/#cladding">{% trans "Wooden cladding" %}</a></li>
                                      <li class="dropdown"><a href="{% url 'blog:post_list' %}">{% trans "Blog" %}</a></li>
-                                    <li class="dropdown"><a href="#project">{% trans "Our Projects" %}</a></li>
+                                    <li class="dropdown"><a href="/#project">{% trans "Our Projects" %}</a></li>
                                 </ul>
                                 <!-- Outer Box-->
                                 <div class="outer-box-nav">
@@ -282,12 +282,12 @@
                                     <h2 class="widget-title">{% trans "Useful links" %}</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="#about">{% trans "About Us" %}</a></li>
-                                            <li><a href="#kitchen">{% trans "Kitchen Cabinet" %}</a></li>
-                                            <li><a href="#Wardrobe">{% trans "Wardrobe" %}</a></li>
-                                            <li><a href="#bathroom">{% trans "Bathroom Vanities" %}</a></li>
-                                            <li><a href="#cladding ">{% trans "Wooden cladding" %}</a></li>
-                                            <li><a href="#project">{% trans "Our Projects" %}</a></li>
+                                            <li><a href="/#about">{% trans "About Us" %}</a></li>
+                                            <li><a href="/#kitchen">{% trans "Kitchen Cabinet" %}</a></li>
+                                            <li><a href="/#Wardrobe">{% trans "Wardrobe" %}</a></li>
+                                            <li><a href="/#bathroom">{% trans "Bathroom Vanities" %}</a></li>
+                                            <li><a href="/#cladding ">{% trans "Wooden cladding" %}</a></li>
+                                            <li><a href="/#project">{% trans "Our Projects" %}</a></li>
                                         </ul>
                                     </div>
                                 </div>
