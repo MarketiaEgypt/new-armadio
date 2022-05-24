@@ -5,10 +5,10 @@ from django_summernote.admin import SummernoteModelAdmin
 from blog.models import Category, Post, Tag
 
 
-# class PostAdmin(SummernoteModelAdmin):  # instead of ModelAdmin
-#     summernote_fields = '__all__'
+class PostAdmin(SummernoteModelAdmin):  # instead of ModelAdmin
+    summernote_fields = '__all__'
 
 
 admin.site.register(Category)
 admin.site.register(Tag)
-admin.site.register(Post)
+admin.site.register(Post, PostAdmin)

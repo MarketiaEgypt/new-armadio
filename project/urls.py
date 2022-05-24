@@ -26,6 +26,7 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('i18n/', include('django.conf.urls.i18n')),
     path('', include('Armadio.urls', namespace='home')),
+    path('summernote/', include('django_summernote.urls')),
     path('blog/', include('blog.urls', namespace='blog')),
     prefix_default_language=False,
 )
