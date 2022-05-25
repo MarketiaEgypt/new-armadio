@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-2.webp' %});">
+            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-2.webp' %})">
                 <div class="auto-container">
                     <div class="content-box">
                         <h2>{% trans "The luxury bathrooms" %}</h2>
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-3.webp' %});">
+            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-3.webp' %})">
                 <div class="auto-container">
                     <div class="content-box">
                         <h2>{% trans "Organize your life" %}</h2>
@@ -35,7 +35,7 @@
                 </div>
             </div>
 
-            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-4.webp' %});">
+            <div class="slide-item" style="background-image: url({% static 'images/main-slider/banner-4.webp' %})">
                 <div class="auto-container">
                     <div class="content-box">
                         <h2>{% trans "Let’s build something unique" %}</h2>
@@ -68,7 +68,7 @@
                             <h2>{% trans "ABOUT" %} <br> {% trans "US" %}</h2>
                         </div>
                         <div class="image-box">
-                            <figure class="alphabet-img wow fadeInRight">
+                            <figure class="alphabet-img wow">
                             {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}     
                                 <img src="{% static 'images/resource/A-letter-cut.webp' %}" width="450" height="420" alt="Armadio Gallery">
@@ -76,8 +76,8 @@
                                 <img src="{% static 'images/resource/A-letter-cut.webp' %}" width="450" height="420" alt="Armadio Gallery">
                             {% endif %}    
                             </figure>
-                            <figure class="alphabet-img-responsive wow fadeInRight"><img src="{% static 'images/resource/AG.webp' %}" width="450" height="420" alt="Armadio Gallery"></figure>
-                            <figure class="image wow fadeInRight" data-wow-delay='600ms'><img src="{% static 'images/resource/G-letter.webp' %}" width="355" height="635" alt="Armadio Gallery"></figure>
+                            <figure class="alphabet-img-responsive wow"><img src="{% static 'images/resource/AG.webp' %}" width="450" height="420" alt="Armadio Gallery"></figure>
+                            <figure class="image wow" data-wow-delay='600ms'><img src="{% static 'images/resource/G-letter.webp' %}" width="355" height="635" alt="Armadio Gallery"></figure>
                         </div>
                     </div>
                 </div>
