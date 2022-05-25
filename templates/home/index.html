@@ -58,7 +58,7 @@
     <!-- End Banner Section -->
 
     <!-- About Section -->
-    <section class="about-section" style="background-image: url({% static 'images/background/1.webp' %});" id="about">
+    <section class="about-section" style="background-image: url({% static 'images/background/1.webp' %})" id="about">
         <div class="auto-container">
             <div class="row no-gutters">
                 <!-- Image Column -->
@@ -68,16 +68,19 @@
                             <h2>{% trans "ABOUT" %} <br> {% trans "US" %}</h2>
                         </div>
                         <div class="image-box">
-                            <figure class="alphabet-img wow">
-                            {% get_current_language as LANGUAGE_CODE %}
+                            <figure class="alphabet-img">
+                                <!-- <img src="{% static 'images/resource/AGG.png' %}" alt="Armadio Gallery"> -->
+                            <!-- {% get_current_language as LANGUAGE_CODE %}
                             {% if LANGUAGE_CODE == 'en' %}     
                                 <img src="{% static 'images/resource/A-letter-cut.webp' %}" width="450" height="420" alt="Armadio Gallery">
                             {% else %}    
                                 <img src="{% static 'images/resource/A-letter-cut.webp' %}" width="450" height="420" alt="Armadio Gallery">
-                            {% endif %}    
+                            {% endif %}     -->
                             </figure>
+                            <figure class="image"><img src="{% static 'images/resource/AGG.png' %}" alt="Armadio Gallery"></figure>
+
                             <figure class="alphabet-img-responsive wow"><img src="{% static 'images/resource/AG.webp' %}" width="450" height="420" alt="Armadio Gallery"></figure>
-                            <figure class="image wow" data-wow-delay='600ms'><img src="{% static 'images/resource/G-letter.webp' %}" width="355" height="635" alt="Armadio Gallery"></figure>
+                            <!-- <figure class="image" data-wow-delay='600ms'><img src="{% static 'images/resource/G-letter.webp' %}" width="355" height="635" alt="Armadio Gallery"></figure> -->
                         </div>
                     </div>
                 </div>
