@@ -10,14 +10,14 @@
 
 
     <!-- Stylesheets -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" async="async">
+    <link href="{% static 'css/bootstrap.css' %}"  rel="preload"  as="style" onload="this.rel='stylesheet'">
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'en' %}
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
     {% else %}
-    <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet" async="async">
-    <link href="{% static 'css/responsive-rtl.css' %}" rel="stylesheet" async="async">
+    <link href="{% static 'css/style-rtl.css' %}"  rel="preload"   as="style" onload="this.rel='stylesheet'">
+    <link href="{% static 'css/responsive-rtl.css' %}" rel="preload"   as="style" onload="this.rel='stylesheet'">
     {% endif %}
 
     <!--Color Themes-->

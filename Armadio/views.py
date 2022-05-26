@@ -10,3 +10,7 @@ def home(request):
     return render(request, 'home/index.html', {
         'posts': posts,
     })
+
+
+def sitemap(request):
+    return render(request, 'home/sitemap.xml')
