@@ -7,8 +7,14 @@
     <!-- SEO -->
     <title>{% trans "Armadio Gallery" %}</title>
     <meta name="google-site-verification" content="nh56j8N7T-ze7LPtIs_P_21aXiWwD2-ZQsREeY4X1nw" />
-
-
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'en' %}
+        <meta name="description" content="A Saudi company specialized in manufacturing kitchens, dressing room cabinets and wood wall cladding to add modern and elegant touches to your home" />
+        <meta name="keywords" content="Kitchen - Cabinet - Wardrobe - Bathroom - Vanities - Wooden - cladding">
+    {% else %}
+        <meta name="description" content="شركة سعودية متخصصة في صناعة المطابخ، خزائن دريسينغ روم وكسوة الحائط بالخشب لإضافة لمسات عصرية وأنيقة لمنزلك" />
+        <meta name="keywords" content="مطبخ - مطابخ المنيوم - خشب - أخشاب مع الضمان - ضمان - جودة اوروبية ايطالية - ايطالي - المانية - الماني - اسبانية - اسباني - اثاث مفروشات - تأثيث - موضة - خزائن - خزانة - دولاب - دواليب - جرانيت - رخام - المنيوم دبل - ارفف - أنيق - ارماديو جاليري - الخبر - الدمام - المنطقة الشرقية - السويكت- Armadio gallery - وحدة تخزين - وحدات تخزين - سوبرماركت عصري أنيق">
+    {% endif %}
     <!-- Stylesheets -->
     <link href="{% static 'css/bootstrap.css' %}"  rel="preload"  as="style" onload="this.rel='stylesheet'">
     {% get_current_language as LANGUAGE_CODE %}
