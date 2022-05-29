@@ -10756,7 +10756,8 @@ div.eapps-widget{
     left:0
 }
 .rtl .about-section .image-column .title-box h2{
-    text-align:left
+    text-align:left;
+    left: -4%;
 }
 .header-style-one .main-menu .navigation > li{
     margin-left:0
