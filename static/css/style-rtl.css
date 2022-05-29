@@ -3442,6 +3442,7 @@ header-style-seven .nav-toggler:hover{
     font-size:60px;
     line-height:78px;
     color:#a62927;
+    left: -4% !important;
     font-weight:900;
     text-transform:uppercase;
     text-shadow:-7px 5px 10px #b09754
@@ -10757,7 +10758,6 @@ div.eapps-widget{
 }
 .rtl .about-section .image-column .title-box h2{
     text-align:left;
-    left: -4%;
 }
 .header-style-one .main-menu .navigation > li{
     margin-left:0
