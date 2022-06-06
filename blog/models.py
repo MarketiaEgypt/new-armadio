@@ -1,3 +1,8 @@
+import sys
+from io import BytesIO
+
+from PIL import Image
+from django.core.files.uploadedfile import InMemoryUploadedFile
 from django.db import models
 
 # Create your models here.
@@ -56,4 +61,3 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('blog:post_detail', kwargs={'slug': self.slug})
-

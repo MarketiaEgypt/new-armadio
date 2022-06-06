@@ -345,7 +345,7 @@
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <div class="social-links">
-                        <img src="{% static 'images/marketia-logo.webp' %}" width="130" height="40" alt="Logo Marketia">
+                        <a href="https://marketiaegy.com/" target="_blank"><img src="{% static 'images/marketia-logo.webp' %}" width="130" height="40" alt="Logo Marketia"></a>
                         <!-- <ul class="social-icon-two">
                             <li><a href="https://instagram.com/armadio_arte?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="https://twitter.com/armadillogalle1/status/1499326460959547393?s=21" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -373,14 +373,16 @@
   <!-- End Main Footer -->
 </div>
 
-<!-- Chat Live -->
-
-<!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
-<div class="elfsight-app-9df63d61-4137-4121-bb61-8d637cab753d"></div>
 
 
-<!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-o-up"></span></div>
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-o-up"></span></div>
+    <!-- Whatsapp Chat -->
+   <a href="https://api.whatsapp.com/send?phone=966595424919" class="float bounce" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
 <script src="{% static 'js/jquery.js' %}"></script>
 <script src="{% static 'js/popper.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -389,7 +391,12 @@
 <script src="{% static 'js/wow.js' %}"></script>
 <script src="{% static 'js/appear.js' %}"></script>
 <script src="{% static 'js/mixitup.js' %}"></script>
-<script class="append-after-script" src="{% static 'js/script.js' %}"></script>
+ {% get_current_language as LANGUAGE_CODE %}
+ {% if LANGUAGE_CODE == 'en' %}
+    <script src="{% static 'js/script.js' %}"></script>
+{% else %}
+    <script src="{% static 'js/script-rtl.js' %}"></script>
+{% endif %}
 <!-- Color Setting -->
 <script src="{% static 'js/color-settings.js' %}"></script>
 </body>

@@ -101,7 +101,7 @@
 			autoHeight: true,
 			autoplay: true,
 			autoplayTimeout:10000,
-			navText: [ '<span class="fa fa-long-arrow-left"></span> prev', 'next<span class="fa fa-long-arrow-right"></span>' ],
+			navText: [ '<span class="fa fa-long-arrow-left"></span> التالي', 'السابق<span class="fa fa-long-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -130,7 +130,7 @@
 			autoHeight: true,
 			autoplay: true,
 			autoplayTimeout:10000,
-			navText: [ '<span class="fa fa-long-arrow-left"></span> prev', 'next<span class="fa fa-long-arrow-right"></span>' ],
+			navText: [ '<span class="fa fa-long-arrow-left"></span> التالي', 'السابق<span class="fa fa-long-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -253,7 +253,7 @@
 			nav:true,
 			smartSpeed: 700,
 			autoplay: true,
-			navText: [ '<span class="fa fa-long-arrow-left"></span> prev', 'next<span class="fa fa-long-arrow-right"></span>' ],
+			navText: [ '<span class="fa fa-long-arrow-left"></span> التالي', 'السابق<span class="fa fa-long-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -280,7 +280,7 @@
 			nav:true,
 			smartSpeed: 700,
 			autoplay: true,
-			navText: [ '<span class="fa fa-long-arrow-left"></span> prev', 'next<span class="fa fa-long-arrow-right"></span>' ],
+			navText: [ '<span class="fa fa-long-arrow-left"></span> التالي', 'السابق<span class="fa fa-long-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -367,7 +367,7 @@
 			center:true,
 			smartSpeed: 700,
 			autoplay: true,
-			navText: [ '<span class="fa fa-long-arrow-left"></span> prev', 'next<span class="fa fa-long-arrow-right"></span>' ],
+			navText: [ '<span class="fa fa-long-arrow-left"></span> التالي', 'السابق<span class="fa fa-long-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -415,7 +415,7 @@
 					margin: 20,
 					items: 1,
 					nav: true,
-					navText: [ '<span class="fa fa-long-arrow-left"></span> prev', 'next<span class="fa fa-long-arrow-right"></span>' ],
+					navText: [ '<span class="fa fa-long-arrow-left"></span> التالي', 'السابق<span class="fa fa-long-arrow-right"></span>' ],
 					dots: false,
 					center: false,
 					autoplay: true,
@@ -667,5 +667,6 @@
 	});	
 
 })(window.jQuery);
+
 
 

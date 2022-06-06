@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-23 11:24+0200\n"
+"POT-Creation-Date: 2022-05-29 21:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1238,99 +1238,91 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: templates/base.html:8 templates/base.html:66 templates/base.html:76
-#: templates/base.html:87 templates/base.html:102 templates/base.html:112
-#: templates/base.html:123 templates/base.html:358 templates/base.html:362
-#: templates/home/index.html:90
+#: templates/base.html:8 templates/base.html:68 templates/base.html:78
+#: templates/base.html:89 templates/base.html:104 templates/base.html:114
+#: templates/base.html:125 templates/base.html:360 templates/base.html:364
+#: templates/home/index.html:93
 msgid "Armadio Gallery"
 msgstr " ارماديو جاليري"
 
-#: templates/base.html:161
+#: templates/base.html:163
 msgid "Home"
 msgstr "الرئيسية"
 
-#: templates/base.html:162 templates/base.html:291
+#: templates/base.html:164 templates/base.html:293
 msgid "About Us"
 msgstr "عن ارماديو"
 
-#: templates/base.html:163 templates/base.html:292
-#: templates/home/index.html:126 templates/home/index.html:188
-#: templates/home/index.html:200 templates/home/index.html:214
-#: templates/home/index.html:228
+#: templates/base.html:165 templates/base.html:294
+#: templates/home/index.html:129 templates/home/index.html:191
+#: templates/home/index.html:203 templates/home/index.html:217
+#: templates/home/index.html:231
 msgid "Kitchen Cabinet"
 msgstr "المطابخ"
 
-#: templates/base.html:164 templates/base.html:293
-#: templates/home/index.html:141 templates/home/index.html:248
+#: templates/base.html:166 templates/base.html:295
+#: templates/home/index.html:144 templates/home/index.html:251
 msgid "Wardrobe"
 msgstr "خزائن دريسينج روم"
 
-#: templates/base.html:165 templates/base.html:294
-#: templates/home/index.html:155 templates/home/index.html:334
+#: templates/base.html:167 templates/base.html:296
+#: templates/home/index.html:158 templates/home/index.html:337
 msgid "Bathroom Vanities"
 msgstr "المغاسل"
 
-#: templates/base.html:166 templates/base.html:295
-#: templates/home/index.html:169 templates/home/index.html:413
+#: templates/base.html:168 templates/base.html:297
+#: templates/home/index.html:172 templates/home/index.html:416
 msgid "Wooden cladding"
 msgstr "الحائط الخشبي"
 
-#: templates/base.html:167
+#: templates/base.html:169
 msgid "Blog"
 msgstr "المدونة"
 
-#: templates/base.html:168 templates/base.html:296
+#: templates/base.html:170 templates/base.html:298
 msgid "Our Projects"
 msgstr "أعمالنا"
 
-#: templates/base.html:261
+#: templates/base.html:263
 msgid ""
 "Our strategy is to deliver a complete integrated solution featuring the very "
 "best in innovative design."
 msgstr "تتمثل استراتيجيتنا في تقديم حل متكامل يضم أفضل ما في التصميم المبتكر."
 
-#: templates/base.html:262
+#: templates/base.html:264
 msgid ""
 "Whether your home is old or new, we’re confident that our designs will meet "
 "your expectations."
 msgstr ""
 "سواء كان منزلك قديمًا أو جديدًا ، فنحن على ثقة من أن تصميماتنا ستلبي توقعاتك."
 
-#: templates/base.html:271
+#: templates/base.html:273
 msgid "Our Address"
 msgstr "عنواننا"
 
-#: templates/base.html:274
+#: templates/base.html:276
 msgid "Prince Bandar Street, Al Khobar - Arabie saoudite"
 msgstr "شارع الأمير بندر مقابل الخبر بلازا، الخبر- المملكة العربية السعودية"
 
-#: templates/base.html:288
+#: templates/base.html:290
 msgid "Useful links"
 msgstr "روابط مفيدة"
 
-#: templates/base.html:305
+#: templates/base.html:307
 msgid "Recent Works"
 msgstr "آخر أعمالنا"
 
-#: templates/base.html:358 templates/base.html:362
+#: templates/base.html:360 templates/base.html:364
 msgid "© 2022"
 msgstr ""
 
-#: templates/base.html:359 templates/base.html:362
+#: templates/base.html:361 templates/base.html:364
 msgid "All right reserved"
 msgstr "جميع الحقوق محفوظة"
 
 #: templates/blog/post_detail.html:55
 msgid "Tags:"
 msgstr "الكلمات المفتاحية:"
-
-#: templates/blog/post_detail.html:65
-msgid "Share This:"
-msgstr "شارك المدونة:"
-
-#: templates/blog/post_detail.html:78
-msgid "Comments"
-msgstr ":تعليقات"
 
 #: templates/blog/post_list.html:50 templates/blog/post_list.html:54
 msgid "Prev"
@@ -1412,11 +1404,11 @@ msgstr "عن"
 msgid "US"
 msgstr "الشركة"
 
-#: templates/home/index.html:90
+#: templates/home/index.html:93
 msgid "With you from start to finish"
 msgstr "معك من البداية إلى النهاية"
 
-#: templates/home/index.html:93
+#: templates/home/index.html:96
 msgid ""
 "Our designs speak for themselves because we take pride in what we do. We "
 "work with high-quality finishes and reliable materials."
@@ -1425,7 +1417,7 @@ msgstr ""
 "بخامات موثوقة وبأحدث التقنيات والأساليب من جميع أنحاء العالم لأننا نبحث في "
 "مجالنا باستمرار"
 
-#: templates/home/index.html:94
+#: templates/home/index.html:97
 msgid ""
 "We look for the latest techniques and styles from around the world because "
 "we research our field constantly."
@@ -1433,7 +1425,7 @@ msgstr ""
 "يقدم معرض أرماديو تصميمات منزليًة عالية الجودة، لأننا ملتزمون بالحفاظ على "
 "مجموعة متنوعة من الخامات وبأسعار مناسبة"
 
-#: templates/home/index.html:95
+#: templates/home/index.html:98
 msgid ""
 "At Armadio gallery, we understand the importance of customer service and "
 "guarantee satisfaction on all products sold."
@@ -1441,39 +1433,39 @@ msgstr ""
 "يرحب بك موظفو المبيعات لدينا في معرضنا ويقدمون لك المساعدة في أي قرارات شراء "
 "لأننا ندرك أهمية خدمة العملاء ونضمن الرضا عن جميع المنتجات المباعة"
 
-#: templates/home/index.html:96
+#: templates/home/index.html:99
 msgid "Call Us"
 msgstr "اتصل بنا"
 
-#: templates/home/index.html:110 templates/home/index.html:187
-#: templates/home/index.html:247 templates/home/index.html:333
-#: templates/home/index.html:412
+#: templates/home/index.html:113 templates/home/index.html:190
+#: templates/home/index.html:250 templates/home/index.html:336
+#: templates/home/index.html:415
 msgid "Services"
 msgstr "خدماتنا"
 
-#: templates/home/index.html:111
+#: templates/home/index.html:114
 msgid "Our Services"
 msgstr "خدماتنا"
 
-#: templates/home/index.html:127
+#: templates/home/index.html:130
 msgid "Kitchens are the most important space within a home."
 msgstr "المطبخ، أهم مساحة داخل المنزل،"
 
-#: templates/home/index.html:128
+#: templates/home/index.html:131
 msgid "Therefore, whether its rebuilding or"
 msgstr " نقضي فيه أوقاتاً طويلة لذلك سواء كنت تريد إعادة بنائه أو تجديده ،"
 
-#: templates/home/index.html:129
+#: templates/home/index.html:132
 msgid ""
 "refurbishing our aim is to work with our clients to ensure their vision "
 "becomes a reality."
 msgstr "فإن هدفنا هو العمل مع عملائنا لضمان أن تصبح تخيلاتهم حقيقية"
 
-#: templates/home/index.html:142
+#: templates/home/index.html:145
 msgid "Wardrobes are essential for keeping your bedroom tidy and organised."
 msgstr "الخزائن ضرورية للحفاظ على غرفة نومك مرتبة ومنظمة،"
 
-#: templates/home/index.html:143
+#: templates/home/index.html:146
 msgid ""
 "They provide valuable storage complete your master bedroom and satisfy all "
 "of your needs."
@@ -1481,7 +1473,7 @@ msgstr ""
 "لأنها توفر الكثير من الأرفف والأدرج  كي تمنحك تخزينًا قيمًا يكمل غرفة نومك "
 "الرئيسية ويلبي جميع احتياجاتك"
 
-#: templates/home/index.html:156
+#: templates/home/index.html:159
 msgid ""
 "A bathroom should not only be a functional room in your home, where you can "
 "rest and relax."
@@ -1489,13 +1481,13 @@ msgstr ""
 "الحمام ليس مجرد غرفة عملية في منزلك، فهو غرفة يجب أن تشعر بالراحة والاسترخاء "
 "بداخلها"
 
-#: templates/home/index.html:157
+#: templates/home/index.html:160
 msgid ""
 "But in many homes, a dated or poorly planned bathroom can make that "
 "impossible."
 msgstr "ونحن نساعدك في تحقيق معادلة التنظيم، الراحة والتصميم الراقي"
 
-#: templates/home/index.html:170
+#: templates/home/index.html:173
 msgid ""
 "Interior wood wall panelling from Armadio gallery is authentic,made from "
 "responsibly sourced materials,"
@@ -1503,48 +1495,48 @@ msgstr ""
 "ألواح الجدران الخشبية تعطي المكان لمسة عصرية، جميع الألواح الخشبية الخاصة "
 "بنا مصنوعة من أقوى وأفخم الخامات،"
 
-#: templates/home/index.html:171
+#: templates/home/index.html:174
 msgid ""
 "all of our wood panels are carefully crafted by experts. We’re passionate "
 "about wood, art, and nature."
 msgstr " نسعى جاهدين لإعطاء عملائنا روح طبيعية لمنازلهم"
 
-#: templates/home/index.html:201
+#: templates/home/index.html:204
 msgid "Elegant touch"
 msgstr "لمسة أنيقة"
 
-#: templates/home/index.html:202
+#: templates/home/index.html:205
 msgid ""
 "A kitchen is more than just a place to prepare and cook food, It is the "
 "heart of the home."
 msgstr "المطبخ أكثر من مجرد مكان لتحضير وطهي الطعام، إنه قلب المنزل"
 
-#: templates/home/index.html:215
+#: templates/home/index.html:218
 msgid "Modern feel"
 msgstr "شعور عصري"
 
-#: templates/home/index.html:216
+#: templates/home/index.html:219
 msgid ""
 "Smart finishing touches especially for those looking to turn their dreams "
 "into reality."
 msgstr ""
 "لمسات نهائية ذكية خاصة لأولئك الذين يتطلعون إلى تحويل أحلامهم إلى حقيقة"
 
-#: templates/home/index.html:229
+#: templates/home/index.html:232
 msgid "Customizable Cabinets"
 msgstr "تخزين عملي"
 
-#: templates/home/index.html:230
+#: templates/home/index.html:233
 msgid ""
 "Storage maximise space without negatively impacting the look and style of "
 "your kitchen."
 msgstr "يزيد التخزين من المساحة دون التأثير سلبًا على شكل وأسلوب مطبخك"
 
-#: templates/home/index.html:252
+#: templates/home/index.html:255
 msgid "Amazing Wardrobe"
 msgstr "خزائن دريسينج روم أنيقة وعصرية"
 
-#: templates/home/index.html:253
+#: templates/home/index.html:256
 msgid ""
 "Perhaps you want to transform the look and feel of your Wardrobe but don’t "
 "want to waste your money and time."
@@ -1552,19 +1544,19 @@ msgstr ""
 "مع مرور الوقت قد تحتاج تغيير وتحديث شكل ومظهر خزانة ملابسك ولكن لا تريد أن "
 "تضيع أموالك ووقتك،"
 
-#: templates/home/index.html:254
+#: templates/home/index.html:257
 msgid ""
 "That’s where refurbishment can be the ideal solution. It’s a quick way to "
 "add style and a more personal feel to your Bedroom."
 msgstr "أرماديو جاليري المكان الذي سيجعل التجديد هو الحل الأمثل. "
 
-#: templates/home/index.html:255
+#: templates/home/index.html:258
 msgid ""
 "With careful planning and design, your wardrobe will enhance the value of "
 "your home, reflecting the style and personality."
 msgstr "فهي طريقة سريعة لإضافة أسلوب خاص بشخصيتك إلى غرفة نومك."
 
-#: templates/home/index.html:256
+#: templates/home/index.html:259
 msgid ""
 "We guarantee a simple yet practical solution to your personal wardrobe and "
 "storage problem with the best quality at an affordable price."
@@ -1572,11 +1564,11 @@ msgstr ""
 "التجديد طريقة رائعة للشعور بالراحة في غرفتك وتحقيق أقصى استفادة من المساحة "
 "المتاحة لأغراضك."
 
-#: templates/home/index.html:348
+#: templates/home/index.html:351
 msgid "Elegant bathroom vanities"
 msgstr "مغاسل أنيقة وفاخرة"
 
-#: templates/home/index.html:350
+#: templates/home/index.html:353
 msgid ""
 "There are many benefits to refurbishing or replacing your bathroom. A well "
 "planned bathroom can help to make the most of the space, making it feel far "
@@ -1585,7 +1577,7 @@ msgstr ""
 "الحمام يضيف أناقة وقيمة لمنزلك خاصة الحمام المصمم جيدًا لأنه يساعدك في تحقيق "
 "أقصى استفادة من المساحة، "
 
-#: templates/home/index.html:351
+#: templates/home/index.html:354
 msgid ""
 "You can even add additional storage without losing that space. A beautiful "
 "bathroom adds style to your home, and can even add value."
@@ -1593,11 +1585,11 @@ msgstr ""
 " مما يجعله أكثر اتساعًا مما قد تتخيله، وبدورنا نساعدك في إختيار الخامات التي "
 "لا تتغير مع مرور الوقت والتصميمات التي تجعله أنيقاً."
 
-#: templates/home/index.html:366
+#: templates/home/index.html:369
 msgid "Simple design"
 msgstr "مغاسل بسيطة ومميزة"
 
-#: templates/home/index.html:367
+#: templates/home/index.html:370
 msgid ""
 "When you see new design with simple details, you always find yourself feel "
 "relax."
@@ -1605,45 +1597,45 @@ msgstr ""
 " عندما ترى تصميمًا جديدًا بتفاصيل بسيطة، ستجد نفسك دائمًا تشعر بالراحة عند "
 "رؤيته وأثناء إستخدامه."
 
-#: templates/home/index.html:368
+#: templates/home/index.html:371
 msgid ""
 "The small bathroom vanities is beautiful and practical, without wasting "
 "space."
 msgstr " "
 
-#: templates/home/index.html:381
+#: templates/home/index.html:384
 msgid "Classic Design"
 msgstr "مغاسل  كلاسيكية فخمة"
 
-#: templates/home/index.html:382
+#: templates/home/index.html:385
 msgid ""
 "Incorporating the classic and modern style, to give a special character with "
 "the use of a large area that fits the existing space."
 msgstr "نصمم لك مغاسل بطريقة مختلفة و بلمسة أنيقة وفخمة"
 
-#: templates/home/index.html:383
+#: templates/home/index.html:386
 msgid "Your Bathroom will be different with special touch from our engineers."
 msgstr " من أيادي مهندسينا لتعطي بصمة كلاسيكية لمنزلك."
 
-#: templates/home/index.html:396
+#: templates/home/index.html:399
 msgid "Luxury Design"
 msgstr "مغاسل عصريىة وجذابة"
 
-#: templates/home/index.html:397
+#: templates/home/index.html:400
 msgid ""
 "The nicest part about choosing bathroom furniture is that you will never "
 "have to make edits."
 msgstr "المغسلة هي لوحة فنية تجعل ديكور الحمام أغنى وتجعل شكله جميل وجذاب،"
 
-#: templates/home/index.html:398
+#: templates/home/index.html:401
 msgid "You can personalize the design to match your specific requirements."
 msgstr " دون الحاجة أبدًا إلى إجراء أي تعديلات  بعد عمله."
 
-#: templates/home/index.html:418
+#: templates/home/index.html:421
 msgid "Make your wall Different"
 msgstr "ميز حائط منزلك بلمسة أنيقة من الطبيعة"
 
-#: templates/home/index.html:419
+#: templates/home/index.html:422
 msgid ""
 "Wall decorative panels have become a popular and much-sought product for "
 "various interior solutions."
@@ -1651,45 +1643,45 @@ msgstr ""
 "أصبحت الألواح الزخرفية للجدران منتجًا شائعًا ومطلوبًا كثيرًا للحلول الداخلية "
 "المختلفة،"
 
-#: templates/home/index.html:420
+#: templates/home/index.html:423
 msgid ""
 "Our design panels will help you to create a visually modern and comfortable "
 "space."
 msgstr "ستساعدك لوحات التصميم الخاصة بنا على إنشاء مساحة مريحة وحديثة بصريًا."
 
-#: templates/home/index.html:494 templates/home/index.html:573
+#: templates/home/index.html:497 templates/home/index.html:576
 msgid "Projects"
 msgstr "أعمالنا"
 
-#: templates/home/index.html:495
+#: templates/home/index.html:498
 msgid "Our Project"
 msgstr "من أعمالنا"
 
-#: templates/home/index.html:574
+#: templates/home/index.html:577
 msgid "How We Work"
 msgstr "كيف نعمل؟"
 
-#: templates/home/index.html:585
+#: templates/home/index.html:588
 msgid "Design"
 msgstr "التصميم"
 
-#: templates/home/index.html:586
+#: templates/home/index.html:589
 msgid "Come to us with samples of the designs that you love and our innovative"
 msgstr ""
 "ندرس نموذج التصاميم والأفكار التي تختارها ويبتكر المصممون لدينا تصميمًا "
 "مبدائيا"
 
-#: templates/home/index.html:587
+#: templates/home/index.html:590
 msgid ""
 "designers come up with a completely unique design that can make your "
 "furniture stand out from the rest."
 msgstr " يمكن أن يجعل منزلك مميزًا وذو لمسة جمالية فريدة ."
 
-#: templates/home/index.html:595
+#: templates/home/index.html:598
 msgid "Planning"
 msgstr "التخطيط"
 
-#: templates/home/index.html:596
+#: templates/home/index.html:599
 msgid ""
 "We convert your rough sketch into an interactive 3D design which is the "
 "closest thing to reality."
@@ -1697,20 +1689,20 @@ msgstr ""
 "نقوم بتحويل التصميم التقريبي الخاص بك إلى تصميم  3D لكي يكون أقرب شيء إلى "
 "الواقع وترى الشكل النهائي قبل تنفيذه"
 
-#: templates/home/index.html:597
+#: templates/home/index.html:600
 msgid ""
 "Only when you give your approval, does the actual process of creation begin."
 msgstr "،وبعدها عملية التنفيذ الفعلية."
 
-#: templates/home/index.html:605
+#: templates/home/index.html:608
 msgid "Execute"
 msgstr "التنفيذ"
 
-#: templates/home/index.html:606
+#: templates/home/index.html:609
 msgid "When your piece is ready after thorough inspection and finishing;"
 msgstr "عندما يكون تصميمك جاهزا بعد الفحص الدقيق"
 
-#: templates/home/index.html:607
+#: templates/home/index.html:610
 msgid ""
 "we deliver it to your location and install it according to your preference, "
 "we deliver unique furniture."
@@ -1718,10 +1710,10 @@ msgstr ""
 "نقوم بتسليمه إلى موقعك ونثبته وفقًا لتفضيلاتك وبأعلى جودة لتحصل على أثاثًا "
 "فريدًامن نوعه."
 
-#: templates/home/index.html:621
+#: templates/home/index.html:624
 msgid "Blogs"
 msgstr "المدونة"
 
-#: templates/home/index.html:622
+#: templates/home/index.html:625
 msgid "Articles"
 msgstr "مقالاتنا"
